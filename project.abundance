@@ -472,6 +472,10 @@
                         {
                             "name": "leg width",
                             "ioValue": 4.5
+                        },
+                        {
+                            "name": "material thick",
+                            "ioValue": 0.75
                         }
                     ],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -536,8 +540,8 @@
                         {
                             "atomType": "Extrude",
                             "name": "Extrude",
-                            "x": 0.6663265306122449,
-                            "y": 0.5242718446601942,
+                            "x": 0.6642857142857143,
+                            "y": 0.4919093851132686,
                             "uniqueID": 1735430721192,
                             "ioValues": [
                                 {
@@ -546,10 +550,36 @@
                                 },
                                 {
                                     "name": "height",
-                                    "ioValue": 1
+                                    "ioValue": 1.5
                                 }
                             ],
                             "description": "Extrudes a 2D shape. Input can be negitive. "
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "material thick",
+                            "x": 0.04,
+                            "y": 0.4789644012944984,
+                            "uniqueID": 1735430979822,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                            "type": "number"
+                        },
+                        {
+                            "atomType": "Code",
+                            "name": "Code",
+                            "x": 0.33061224489795915,
+                            "y": 0.43365695792880254,
+                            "uniqueID": 1735431001599,
+                            "ioValues": [
+                                {
+                                    "name": "thickness",
+                                    "ioValue": 0.75
+                                }
+                            ],
+                            "description": "Defines a Replicad code block.",
+                            "codeVersion": 1,
+                            "code": " \n//Inputs:[thickness];\n\nif (thickness >= 1.5){\n  return 1.5\n}\nelse{\n  return 1.5\n}\n\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
                         }
                     ],
                     "allConnectors": [
@@ -573,6 +603,20 @@
                             "ap2Primary": false,
                             "ap1ID": 1735430644075,
                             "ap2ID": 1735430557453
+                        },
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "thickness",
+                            "ap2Primary": false,
+                            "ap1ID": 1735430979822,
+                            "ap2ID": 1735431001599
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "height",
+                            "ap2Primary": false,
+                            "ap1ID": 1735431001599,
+                            "ap2ID": 1735430721192
                         }
                     ],
                     "fileTypeVersion": 1,
