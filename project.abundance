@@ -1341,7 +1341,7 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 17.25
+                            "ioValue": 15.75
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -1556,9 +1556,9 @@
                 },
                 {
                     "atomType": "Equation",
-                    "name": "h - w",
-                    "x": 0.4112244897959184,
-                    "y": 0.8737864077669903,
+                    "name": "h - (w/2)",
+                    "x": 0.4153061224489796,
+                    "y": 0.8640776699029127,
                     "uniqueID": 1735577118524,
                     "ioValues": [
                         {
@@ -1567,11 +1567,11 @@
                         },
                         {
                             "name": "w",
-                            "ioValue": 0.75
+                            "ioValue": 4.5
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "h - w"
+                    "currentEquation": "h - (w/2)"
                 },
                 {
                     "atomType": "Input",
@@ -1657,6 +1657,13 @@
                 },
                 {
                     "ap1Name": "number or geometry",
+                    "ap2Name": "w",
+                    "ap2Primary": false,
+                    "ap1ID": 1735574284330,
+                    "ap2ID": 1735577118524
+                },
+                {
+                    "ap1Name": "number or geometry",
                     "ap2Name": "l",
                     "ap2Primary": false,
                     "ap1ID": 1735574401644,
@@ -1675,13 +1682,6 @@
                     "ap2Primary": false,
                     "ap1ID": 1735574425725,
                     "ap2ID": 1735574204580
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "w",
-                    "ap2Primary": false,
-                    "ap1ID": 1735574425725,
-                    "ap2ID": 1735577118524
                 },
                 {
                     "ap1Name": "geometry",
