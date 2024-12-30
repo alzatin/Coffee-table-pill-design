@@ -27,14 +27,19 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1735417662335,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1735575380188
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
             "atomType": "Molecule",
             "name": "Table top",
-            "x": 0.22755102040816325,
-            "y": 0.34951456310679613,
+            "x": 0.2173469387755102,
+            "y": 0.3624595469255663,
             "uniqueID": 1735417670097,
             "ioValues": [
                 {
@@ -164,8 +169,8 @@
                 {
                     "atomType": "Join",
                     "name": "Fusion",
-                    "x": 0.6081632653061224,
-                    "y": 0.38187702265372164,
+                    "x": 0.610204081632653,
+                    "y": 0.3786407766990291,
                     "uniqueID": 1735417786863,
                     "ioValues": [
                         {
@@ -432,8 +437,8 @@
         {
             "atomType": "Molecule",
             "name": "Undercarriage",
-            "x": 0.26224489795918365,
-            "y": 0.6472491909385114,
+            "x": 0.2693877551020408,
+            "y": 0.6860841423948221,
             "uniqueID": 1735430491941,
             "ioValues": [
                 {
@@ -446,7 +451,7 @@
                 },
                 {
                     "name": "table length",
-                    "ioValue": 36
+                    "ioValue": 30
                 },
                 {
                     "name": "wood thick",
@@ -954,7 +959,7 @@
                                 }
                             ],
                             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
-                            "unionType": "Fusion",
+                            "unionType": "Assembly",
                             "unionIndex": 1
                         },
                         {
@@ -1350,7 +1355,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 18
+                            "ioValue": 15
                         },
                         {
                             "name": "yDist",
@@ -1404,7 +1409,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 18
+                            "ioValue": 15
                         },
                         {
                             "name": "yDist",
@@ -1457,7 +1462,7 @@
                     "ioValues": [
                         {
                             "name": "l",
-                            "ioValue": 36
+                            "ioValue": 30
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -1476,7 +1481,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": -18
+                            "ioValue": -15
                         },
                         {
                             "name": "yDist",
@@ -1513,7 +1518,7 @@
                     "ioValues": [
                         {
                             "name": "l",
-                            "ioValue": 36
+                            "ioValue": 30
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -1532,7 +1537,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": -18
+                            "ioValue": -15
                         },
                         {
                             "name": "yDist",
@@ -1750,8 +1755,8 @@
         {
             "atomType": "Join",
             "name": "Assembly",
-            "x": 0.6816326530612246,
-            "y": 0.5857605177993528,
+            "x": 0.6806122448979591,
+            "y": 0.5080906148867314,
             "uniqueID": 1735575380188,
             "ioValues": [
                 {
@@ -1770,8 +1775,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.5091836734693878,
-            "y": 0.255663430420712,
+            "x": 0.5051020408163265,
+            "y": 0.21682847896440127,
             "uniqueID": 1735575431271,
             "ioValues": [
                 {
@@ -1846,6 +1851,13 @@
         },
         {
             "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1735575380188,
+            "ap2ID": 1735417662335
+        },
+        {
+            "ap1Name": "geometry",
             "ap2Name": "Shape 5",
             "ap2Primary": false,
             "ap1ID": 1735575431271,
@@ -1868,6 +1880,6 @@
     ],
     "unitsKey": "Inches",
     "fileTypeVersion": 1,
-    "compiledBom": {},
+    "compiledBom": [],
     "filetypeVersion": 1
 }
