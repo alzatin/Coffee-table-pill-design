@@ -430,11 +430,19 @@
             "ioValues": [
                 {
                     "name": "Table width",
-                    "ioValue": 10
+                    "ioValue": 18
                 },
                 {
                     "name": "leg width",
+                    "ioValue": 4.5
+                },
+                {
+                    "name": "table length",
                     "ioValue": 10
+                },
+                {
+                    "name": "wood thick",
+                    "ioValue": 0.75
                 }
             ],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -461,8 +469,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "Leg",
-                    "x": 0.22346938775510203,
-                    "y": 0.3365695792880259,
+                    "x": 0.22755102040816325,
+                    "y": 0.34304207119741104,
                     "uniqueID": 1735430511292,
                     "ioValues": [
                         {
@@ -776,13 +784,13 @@
                 {
                     "atomType": "Molecule",
                     "name": "cross beam",
-                    "x": 0.22346938775510203,
-                    "y": 0.5663430420711973,
+                    "x": 0.33061224489795915,
+                    "y": 0.5372168284789643,
                     "uniqueID": 1735574204580,
                     "ioValues": [
                         {
                             "name": "Table width",
-                            "ioValue": 36
+                            "ioValue": 18
                         },
                         {
                             "name": "wood thick",
@@ -790,7 +798,7 @@
                         },
                         {
                             "name": "croos width",
-                            "ioValue": 5
+                            "ioValue": 4.5
                         }
                     ],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -809,7 +817,7 @@
                             "atomType": "Input",
                             "name": "Table width",
                             "x": 0.04,
-                            "y": 0.8155339805825242,
+                            "y": 0.7993527508090615,
                             "uniqueID": 1735574204789,
                             "ioValues": [],
                             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
@@ -817,17 +825,17 @@
                         {
                             "atomType": "Rectangle",
                             "name": "Rectangle",
-                            "x": 0.3336734693877551,
-                            "y": 0.3915857605177993,
+                            "x": 0.2571428571428572,
+                            "y": 0.3559870550161812,
                             "uniqueID": 1735574229581,
                             "ioValues": [
                                 {
                                     "name": "x length",
-                                    "ioValue": 35.625
+                                    "ioValue": 17.625
                                 },
                                 {
                                     "name": "y length",
-                                    "ioValue": 5
+                                    "ioValue": 4.5
                                 }
                             ],
                             "description": "Creates a new rectangle."
@@ -835,13 +843,13 @@
                         {
                             "atomType": "Extrude",
                             "name": "Extrude",
-                            "x": 0.6091836734693877,
-                            "y": 0.5598705501618123,
+                            "x": 0.8622448979591837,
+                            "y": 0.6278317152103561,
                             "uniqueID": 1735574233656,
                             "ioValues": [
                                 {
                                     "name": "geometry",
-                                    "ioValue": 1735574229581
+                                    "ioValue": 1735574558324
                                 },
                                 {
                                     "name": "height",
@@ -873,13 +881,13 @@
                         {
                             "atomType": "Equation",
                             "name": "x - (t /2)",
-                            "x": 0.21326530612244898,
-                            "y": 0.8187702265372168,
+                            "x": 0.1826530612244898,
+                            "y": 0.6828478964401294,
                             "uniqueID": 1735574339272,
                             "ioValues": [
                                 {
                                     "name": "x",
-                                    "ioValue": 36
+                                    "ioValue": 18
                                 },
                                 {
                                     "name": "t",
@@ -888,6 +896,59 @@
                             ],
                             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
                             "currentEquation": "x - (t /2)"
+                        },
+                        {
+                            "atomType": "Rectangle",
+                            "name": "Rectangle",
+                            "x": 0.40714285714285714,
+                            "y": 0.7508090614886731,
+                            "uniqueID": 1735574547132,
+                            "ioValues": [
+                                {
+                                    "name": "x length",
+                                    "ioValue": 10
+                                },
+                                {
+                                    "name": "y length",
+                                    "ioValue": 10
+                                }
+                            ],
+                            "description": "Creates a new rectangle."
+                        },
+                        {
+                            "atomType": "Join",
+                            "name": "Fusion",
+                            "x": 0.7193877551020408,
+                            "y": 0.5339805825242718,
+                            "uniqueID": 1735574558324,
+                            "ioValues": [
+                                {
+                                    "name": "Shape 1",
+                                    "ioValue": 1735574229581
+                                }
+                            ],
+                            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+                            "unionType": "Fusion",
+                            "unionIndex": 1
+                        },
+                        {
+                            "atomType": "Equation",
+                            "name": "x + y",
+                            "x": 0.32653061224489793,
+                            "y": 0.8220064724919094,
+                            "uniqueID": 1735574658304,
+                            "ioValues": [
+                                {
+                                    "name": "x",
+                                    "ioValue": 1
+                                },
+                                {
+                                    "name": "y",
+                                    "ioValue": 1
+                                }
+                            ],
+                            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                            "currentEquation": "x + y"
                         }
                     ],
                     "allConnectors": [
@@ -900,10 +961,10 @@
                         },
                         {
                             "ap1Name": "geometry",
-                            "ap2Name": "geometry",
-                            "ap2Primary": true,
+                            "ap2Name": "Shape 1",
+                            "ap2Primary": false,
                             "ap1ID": 1735574229581,
-                            "ap2ID": 1735574233656
+                            "ap2ID": 1735574558324
                         },
                         {
                             "ap1Name": "number or geometry",
@@ -932,6 +993,13 @@
                             "ap2Primary": false,
                             "ap1ID": 1735574339272,
                             "ap2ID": 1735574229581
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1735574558324,
+                            "ap2ID": 1735574233656
                         }
                     ],
                     "fileTypeVersion": 1,
@@ -941,14 +1009,63 @@
                     "atomType": "Input",
                     "name": "leg width",
                     "x": 0.04,
-                    "y": 0.41747572815533984,
+                    "y": 0.3883495145631068,
                     "uniqueID": 1735574284330,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "table length",
+                    "x": 0.04,
+                    "y": 0.7799352750809061,
+                    "uniqueID": 1735574401644,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "wood thick",
+                    "x": 0.04,
+                    "y": 0.9158576051779935,
+                    "uniqueID": 1735574425725,
                     "ioValues": [],
                     "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
                     "type": "number"
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Table width",
+                    "ap2Primary": false,
+                    "ap1ID": 1735430491605,
+                    "ap2ID": 1735574204580
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "croos width",
+                    "ap2Primary": false,
+                    "ap1ID": 1735574284330,
+                    "ap2ID": 1735574204580
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "leg width",
+                    "ap2Primary": false,
+                    "ap1ID": 1735574284330,
+                    "ap2ID": 1735430511292
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "wood thick",
+                    "ap2Primary": false,
+                    "ap1ID": 1735574425725,
+                    "ap2ID": 1735574204580
+                }
+            ],
             "fileTypeVersion": 1,
             "compiledBom": {}
         }
