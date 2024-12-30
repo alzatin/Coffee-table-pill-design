@@ -424,12 +424,16 @@
         {
             "atomType": "Molecule",
             "name": "Undercarriage",
-            "x": 0.2683673469387755,
-            "y": 0.6537216828478964,
+            "x": 0.2642857142857143,
+            "y": 0.6343042071197411,
             "uniqueID": 1735430491941,
             "ioValues": [
                 {
                     "name": "Table width",
+                    "ioValue": 10
+                },
+                {
+                    "name": "leg width",
                     "ioValue": 10
                 }
             ],
@@ -449,7 +453,7 @@
                     "atomType": "Input",
                     "name": "Table width",
                     "x": 0.04,
-                    "y": 0.5760517799352751,
+                    "y": 0.6019417475728155,
                     "uniqueID": 1735430491605,
                     "ioValues": [],
                     "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
@@ -457,8 +461,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "Leg",
-                    "x": 0.22244897959183674,
-                    "y": 0.37540453074433655,
+                    "x": 0.22346938775510203,
+                    "y": 0.3365695792880259,
                     "uniqueID": 1735430511292,
                     "ioValues": [
                         {
@@ -487,7 +491,12 @@
                             "x": 0.98,
                             "y": 0.5,
                             "uniqueID": 1735430511294,
-                            "ioValues": [],
+                            "ioValues": [
+                                {
+                                    "name": "number or geometry",
+                                    "ioValue": 1735573962720
+                                }
+                            ],
                             "description": "Connect geometry here to make it available in the next level up. "
                         },
                         {
@@ -550,7 +559,7 @@
                                 },
                                 {
                                     "name": "height",
-                                    "ioValue": 1.5
+                                    "ioValue": 0.75
                                 }
                             ],
                             "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -621,8 +630,8 @@
                         {
                             "atomType": "Move",
                             "name": "Move",
-                            "x": 0.7959183673469388,
-                            "y": 0.6375404530744336,
+                            "x": 0.8,
+                            "y": 0.6310679611650486,
                             "uniqueID": 1735573962720,
                             "ioValues": [
                                 {
@@ -635,11 +644,11 @@
                                 },
                                 {
                                     "name": "yDist",
-                                    "ioValue": 0
+                                    "ioValue": 0.375
                                 },
                                 {
                                     "name": "zDist",
-                                    "ioValue": 0
+                                    "ioValue": 9
                                 }
                             ],
                             "description": "Moves a shape laterally in X, Y, Z."
@@ -647,17 +656,32 @@
                         {
                             "atomType": "Equation",
                             "name": "h/ 2",
-                            "x": 0.5295918367346939,
-                            "y": 0.7605177993527508,
+                            "x": 0.5265306122448979,
+                            "y": 0.8381877022653721,
                             "uniqueID": 1735573985952,
                             "ioValues": [
                                 {
                                     "name": "h",
-                                    "ioValue": 1
+                                    "ioValue": 18
                                 }
                             ],
                             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
                             "currentEquation": "h/ 2"
+                        },
+                        {
+                            "atomType": "Equation",
+                            "name": "t/2",
+                            "x": 0.573469387755102,
+                            "y": 0.6796116504854368,
+                            "uniqueID": 1735574103880,
+                            "ioValues": [
+                                {
+                                    "name": "t",
+                                    "ioValue": 0.75
+                                }
+                            ],
+                            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                            "currentEquation": "t/2"
                         }
                     ],
                     "allConnectors": [
@@ -711,6 +735,13 @@
                             "ap2ID": 1735430721192
                         },
                         {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "t",
+                            "ap2Primary": false,
+                            "ap1ID": 1735430979822,
+                            "ap2ID": 1735574103880
+                        },
+                        {
                             "ap1Name": "geometry",
                             "ap2Name": "geometry",
                             "ap2Primary": true,
@@ -718,15 +749,203 @@
                             "ap2ID": 1735573962720
                         },
                         {
+                            "ap1Name": "geometry",
+                            "ap2Name": "number or geometry",
+                            "ap2Primary": false,
+                            "ap1ID": 1735573962720,
+                            "ap2ID": 1735430511294
+                        },
+                        {
                             "ap1Name": "result",
-                            "ap2Name": "xDist",
+                            "ap2Name": "zDist",
                             "ap2Primary": false,
                             "ap1ID": 1735573985952,
+                            "ap2ID": 1735573962720
+                        },
+                        {
+                            "ap1Name": "result",
+                            "ap2Name": "yDist",
+                            "ap2Primary": false,
+                            "ap1ID": 1735574103880,
                             "ap2ID": 1735573962720
                         }
                     ],
                     "fileTypeVersion": 1,
+                    "compiledBom": []
+                },
+                {
+                    "atomType": "Molecule",
+                    "name": "cross beam",
+                    "x": 0.22346938775510203,
+                    "y": 0.5663430420711973,
+                    "uniqueID": 1735574204580,
+                    "ioValues": [
+                        {
+                            "name": "Table width",
+                            "ioValue": 36
+                        },
+                        {
+                            "name": "wood thick",
+                            "ioValue": 0.75
+                        },
+                        {
+                            "name": "croos width",
+                            "ioValue": 5
+                        }
+                    ],
+                    "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+                    "topLevel": false,
+                    "allAtoms": [
+                        {
+                            "atomType": "Output",
+                            "name": "Output",
+                            "x": 0.98,
+                            "y": 0.5,
+                            "uniqueID": 1735574204847,
+                            "ioValues": [],
+                            "description": "Connect geometry here to make it available in the next level up. "
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Table width",
+                            "x": 0.04,
+                            "y": 0.8155339805825242,
+                            "uniqueID": 1735574204789,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        },
+                        {
+                            "atomType": "Rectangle",
+                            "name": "Rectangle",
+                            "x": 0.3336734693877551,
+                            "y": 0.3915857605177993,
+                            "uniqueID": 1735574229581,
+                            "ioValues": [
+                                {
+                                    "name": "x length",
+                                    "ioValue": 35.625
+                                },
+                                {
+                                    "name": "y length",
+                                    "ioValue": 5
+                                }
+                            ],
+                            "description": "Creates a new rectangle."
+                        },
+                        {
+                            "atomType": "Extrude",
+                            "name": "Extrude",
+                            "x": 0.6091836734693877,
+                            "y": 0.5598705501618123,
+                            "uniqueID": 1735574233656,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1735574229581
+                                },
+                                {
+                                    "name": "height",
+                                    "ioValue": 0.75
+                                }
+                            ],
+                            "description": "Extrudes a 2D shape. Input can be negitive. "
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "wood thick",
+                            "x": 0.04,
+                            "y": 0.5825242718446603,
+                            "uniqueID": 1735574246711,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                            "type": "number"
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "croos width",
+                            "x": 0.04,
+                            "y": 0.4660194174757281,
+                            "uniqueID": 1735574304853,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                            "type": "number"
+                        },
+                        {
+                            "atomType": "Equation",
+                            "name": "x - (t /2)",
+                            "x": 0.21326530612244898,
+                            "y": 0.8187702265372168,
+                            "uniqueID": 1735574339272,
+                            "ioValues": [
+                                {
+                                    "name": "x",
+                                    "ioValue": 36
+                                },
+                                {
+                                    "name": "t",
+                                    "ioValue": 0.75
+                                }
+                            ],
+                            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                            "currentEquation": "x - (t /2)"
+                        }
+                    ],
+                    "allConnectors": [
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "x",
+                            "ap2Primary": false,
+                            "ap1ID": 1735574204789,
+                            "ap2ID": 1735574339272
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1735574229581,
+                            "ap2ID": 1735574233656
+                        },
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "height",
+                            "ap2Primary": false,
+                            "ap1ID": 1735574246711,
+                            "ap2ID": 1735574233656
+                        },
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "t",
+                            "ap2Primary": false,
+                            "ap1ID": 1735574246711,
+                            "ap2ID": 1735574339272
+                        },
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "y length",
+                            "ap2Primary": false,
+                            "ap1ID": 1735574304853,
+                            "ap2ID": 1735574229581
+                        },
+                        {
+                            "ap1Name": "result",
+                            "ap2Name": "x length",
+                            "ap2Primary": false,
+                            "ap1ID": 1735574339272,
+                            "ap2ID": 1735574229581
+                        }
+                    ],
+                    "fileTypeVersion": 1,
                     "compiledBom": {}
+                },
+                {
+                    "atomType": "Input",
+                    "name": "leg width",
+                    "x": 0.04,
+                    "y": 0.41747572815533984,
+                    "uniqueID": 1735574284330,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
                 }
             ],
             "allConnectors": [],
