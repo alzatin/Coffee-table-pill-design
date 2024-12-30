@@ -187,7 +187,7 @@
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
-                    "unionType": "Fusion",
+                    "unionType": "Assembly",
                     "unionIndex": 1
                 },
                 {
@@ -437,8 +437,8 @@
         {
             "atomType": "Molecule",
             "name": "Undercarriage",
-            "x": 0.2693877551020408,
-            "y": 0.6860841423948221,
+            "x": 0.2857142857142857,
+            "y": 0.7184466019417476,
             "uniqueID": 1735430491941,
             "ioValues": [
                 {
@@ -802,8 +802,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "cross beam",
-                    "x": 0.23979591836734693,
-                    "y": 0.8446601941747572,
+                    "x": 0.2530612244897959,
+                    "y": 0.8284789644012945,
                     "uniqueID": 1735574204580,
                     "ioValues": [
                         {
@@ -959,7 +959,7 @@
                                 }
                             ],
                             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
-                            "unionType": "Fusion",
+                            "unionType": "Assembly",
                             "unionIndex": 1
                         },
                         {
@@ -1319,8 +1319,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.48775510204081635,
-                    "y": 0.7961165048543689,
+                    "x": 0.5051020408163265,
+                    "y": 0.7864077669902912,
                     "uniqueID": 1735574929959,
                     "ioValues": [
                         {
@@ -1549,6 +1549,25 @@
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Equation",
+                    "name": "h - w",
+                    "x": 0.4112244897959184,
+                    "y": 0.8737864077669903,
+                    "uniqueID": 1735577118524,
+                    "ioValues": [
+                        {
+                            "name": "h",
+                            "ioValue": 1
+                        },
+                        {
+                            "name": "w",
+                            "ioValue": 1
+                        }
+                    ],
+                    "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                    "currentEquation": "h - w"
                 }
             ],
             "allConnectors": [
@@ -1748,8 +1767,8 @@
         {
             "atomType": "Join",
             "name": "Assembly",
-            "x": 0.6785714285714286,
-            "y": 0.5339805825242718,
+            "x": 0.7091836734693878,
+            "y": 0.511326860841424,
             "uniqueID": 1735575380188,
             "ioValues": [
                 {
