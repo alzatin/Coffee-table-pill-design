@@ -25,7 +25,7 @@
         {
             "atomType": "Molecule",
             "name": "Table top",
-            "x": 0.22346938775510203,
+            "x": 0.22551020408163264,
             "y": 0.3268608414239482,
             "uniqueID": 1735417670097,
             "ioValues": [
@@ -174,7 +174,7 @@
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
-                    "unionType": "Fusion",
+                    "unionType": "Assembly",
                     "unionIndex": 1
                 },
                 {
@@ -502,8 +502,8 @@
                         {
                             "atomType": "Rectangle",
                             "name": "Rectangle",
-                            "x": 0.32346938775510203,
-                            "y": 0.7864077669902912,
+                            "x": 0.3010204081632653,
+                            "y": 0.6051779935275081,
                             "uniqueID": 1735430557453,
                             "ioValues": [
                                 {
@@ -540,8 +540,8 @@
                         {
                             "atomType": "Extrude",
                             "name": "Extrude",
-                            "x": 0.6642857142857143,
-                            "y": 0.4919093851132686,
+                            "x": 0.5336734693877551,
+                            "y": 0.47572815533980584,
                             "uniqueID": 1735430721192,
                             "ioValues": [
                                 {
@@ -568,8 +568,8 @@
                         {
                             "atomType": "Code",
                             "name": "Code",
-                            "x": 0.33061224489795915,
-                            "y": 0.43365695792880254,
+                            "x": 0.3295918367346939,
+                            "y": 0.27831715210355984,
                             "uniqueID": 1735431001599,
                             "ioValues": [
                                 {
@@ -580,6 +580,84 @@
                             "description": "Defines a Replicad code block.",
                             "codeVersion": 1,
                             "code": " \n//Inputs:[thickness];\n\nif (thickness >= 1.5){\n  return 1.5\n}\nelse{\n  return 1.5\n}\n\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
+                        },
+                        {
+                            "atomType": "Readme",
+                            "name": "README",
+                            "x": 0.4091836734693877,
+                            "y": 0.3624595469255663,
+                            "uniqueID": 1735573901763,
+                            "ioValues": [],
+                            "description": "A place to put project notes. These will appear in the GitHub readme and in the description of molecules up the chain. Markdown is supported. ",
+                            "readmeText": "Readme text here",
+                            "global": true
+                        },
+                        {
+                            "atomType": "Rotate",
+                            "name": "Rotate",
+                            "x": 0.6714285714285715,
+                            "y": 0.4724919093851133,
+                            "uniqueID": 1735573953065,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1735430721192
+                                },
+                                {
+                                    "name": "x-axis degrees",
+                                    "ioValue": 90
+                                },
+                                {
+                                    "name": "y-axis degrees",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "z-axis degrees",
+                                    "ioValue": 0
+                                }
+                            ],
+                            "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+                        },
+                        {
+                            "atomType": "Move",
+                            "name": "Move",
+                            "x": 0.7959183673469388,
+                            "y": 0.6375404530744336,
+                            "uniqueID": 1735573962720,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1735573953065
+                                },
+                                {
+                                    "name": "xDist",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "yDist",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "zDist",
+                                    "ioValue": 0
+                                }
+                            ],
+                            "description": "Moves a shape laterally in X, Y, Z."
+                        },
+                        {
+                            "atomType": "Equation",
+                            "name": "h/ 2",
+                            "x": 0.5295918367346939,
+                            "y": 0.7605177993527508,
+                            "uniqueID": 1735573985952,
+                            "ioValues": [
+                                {
+                                    "name": "h",
+                                    "ioValue": 1
+                                }
+                            ],
+                            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                            "currentEquation": "h/ 2"
                         }
                     ],
                     "allConnectors": [
@@ -599,10 +677,24 @@
                         },
                         {
                             "ap1Name": "number or geometry",
+                            "ap2Name": "h",
+                            "ap2Primary": false,
+                            "ap1ID": 1735430585962,
+                            "ap2ID": 1735573985952
+                        },
+                        {
+                            "ap1Name": "number or geometry",
                             "ap2Name": "x length",
                             "ap2Primary": false,
                             "ap1ID": 1735430644075,
                             "ap2ID": 1735430557453
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1735430721192,
+                            "ap2ID": 1735573953065
                         },
                         {
                             "ap1Name": "number or geometry",
@@ -612,11 +704,25 @@
                             "ap2ID": 1735431001599
                         },
                         {
-                            "ap1Name": "geometry",
+                            "ap1Name": "number or geometry",
                             "ap2Name": "height",
                             "ap2Primary": false,
-                            "ap1ID": 1735431001599,
+                            "ap1ID": 1735430979822,
                             "ap2ID": 1735430721192
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1735573953065,
+                            "ap2ID": 1735573962720
+                        },
+                        {
+                            "ap1Name": "result",
+                            "ap2Name": "xDist",
+                            "ap2Primary": false,
+                            "ap1ID": 1735573985952,
+                            "ap2ID": 1735573962720
                         }
                     ],
                     "fileTypeVersion": 1,
