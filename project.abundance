@@ -3195,7 +3195,7 @@
                 },
                 {
                     "name": "Part Name",
-                    "ioValue": "Part Name"
+                    "ioValue": "Cut Layout"
                 },
                 {
                     "name": "File Type",
@@ -3203,7 +3203,7 @@
                 }
             ],
             "description": "Export Atom, let's you choose a type of file to Export.",
-            "type": null,
+            "type": "SVG",
             "resolution": 72,
             "importIndex": 0,
             "fileName": null
