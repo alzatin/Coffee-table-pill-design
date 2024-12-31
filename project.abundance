@@ -7,7 +7,7 @@
     "ioValues": [
         {
             "name": "Table width",
-            "ioValue": 24
+            "ioValue": 20
         },
         {
             "name": "table height",
@@ -23,7 +23,11 @@
         },
         {
             "name": "table length",
-            "ioValue": 10
+            "ioValue": 24
+        },
+        {
+            "name": "leg width",
+            "ioValue": 5
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -46,8 +50,8 @@
         {
             "atomType": "Molecule",
             "name": "Table top",
-            "x": 0.23367346938775513,
-            "y": 0.29393939393939394,
+            "x": 0.2755102040816326,
+            "y": 0.2515151515151515,
             "uniqueID": 1735417670097,
             "ioValues": [
                 {
@@ -56,7 +60,7 @@
                 },
                 {
                     "name": "table width",
-                    "ioValue": 24
+                    "ioValue": 20
                 },
                 {
                     "name": "top thickness",
@@ -89,7 +93,7 @@
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 24
+                            "ioValue": 20
                         }
                     ],
                     "description": "Creates a new circle."
@@ -113,11 +117,11 @@
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 24
+                            "ioValue": 28
                         },
                         {
                             "name": "y length",
-                            "ioValue": 24
+                            "ioValue": 20
                         }
                     ],
                     "description": "Creates a new rectangle."
@@ -135,7 +139,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 12
+                            "ioValue": 14
                         },
                         {
                             "name": "yDist",
@@ -161,7 +165,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": -12
+                            "ioValue": -14
                         },
                         {
                             "name": "yDist",
@@ -211,7 +215,7 @@
                         },
                         {
                             "name": "y",
-                            "ioValue": 24
+                            "ioValue": 20
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -230,7 +234,7 @@
                         },
                         {
                             "name": "y",
-                            "ioValue": 24
+                            "ioValue": 20
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -259,7 +263,7 @@
                         },
                         {
                             "name": "y",
-                            "ioValue": 24
+                            "ioValue": 20
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -436,7 +440,7 @@
             "atomType": "Input",
             "name": "Table width",
             "x": 0.04,
-            "y": 0.5878787878787879,
+            "y": 0.603030303030303,
             "uniqueID": 1735430025770,
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
@@ -445,21 +449,21 @@
         {
             "atomType": "Molecule",
             "name": "Undercarriage 1",
-            "x": 0.4887755102040816,
-            "y": 0.603030303030303,
+            "x": 0.5438775510204082,
+            "y": 0.593939393939394,
             "uniqueID": 1735430491941,
             "ioValues": [
                 {
                     "name": "Table width",
-                    "ioValue": 10
+                    "ioValue": 20
                 },
                 {
                     "name": "leg width",
-                    "ioValue": 4.5
+                    "ioValue": 5
                 },
                 {
                     "name": "table length",
-                    "ioValue": 20
+                    "ioValue": 24
                 },
                 {
                     "name": "wood thick",
@@ -491,7 +495,7 @@
                     "atomType": "Input",
                     "name": "Table width",
                     "x": 0.04,
-                    "y": 0.6019417475728155,
+                    "y": 0.603030303030303,
                     "uniqueID": 1735430491605,
                     "ioValues": [],
                     "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
@@ -513,7 +517,7 @@
                         },
                         {
                             "name": "leg width",
-                            "ioValue": 4.5
+                            "ioValue": 5
                         },
                         {
                             "name": "material thick",
@@ -555,7 +559,7 @@
                             "ioValues": [
                                 {
                                     "name": "x length",
-                                    "ioValue": 4.5
+                                    "ioValue": 5
                                 },
                                 {
                                     "name": "y length",
@@ -820,7 +824,7 @@
                     "ioValues": [
                         {
                             "name": "Table width",
-                            "ioValue": 10
+                            "ioValue": 20
                         },
                         {
                             "name": "wood thick",
@@ -828,7 +832,7 @@
                         },
                         {
                             "name": "croos width",
-                            "ioValue": 4.5
+                            "ioValue": 5
                         }
                     ],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -866,11 +870,11 @@
                             "ioValues": [
                                 {
                                     "name": "x length",
-                                    "ioValue": 9.625
+                                    "ioValue": 19.625
                                 },
                                 {
                                     "name": "y length",
-                                    "ioValue": 4.5
+                                    "ioValue": 5
                                 }
                             ],
                             "description": "Creates a new rectangle."
@@ -922,7 +926,7 @@
                             "ioValues": [
                                 {
                                     "name": "x",
-                                    "ioValue": 10
+                                    "ioValue": 20
                                 },
                                 {
                                     "name": "t",
@@ -945,7 +949,7 @@
                                 },
                                 {
                                     "name": "y length",
-                                    "ioValue": 3
+                                    "ioValue": 3.3333333333333335
                                 }
                             ],
                             "description": "Creates a new rectangle."
@@ -971,7 +975,7 @@
                                 }
                             ],
                             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
-                            "unionType": "Fusion",
+                            "unionType": "Assembly",
                             "unionIndex": 1
                         },
                         {
@@ -983,7 +987,7 @@
                             "ioValues": [
                                 {
                                     "name": "w",
-                                    "ioValue": 4.5
+                                    "ioValue": 5
                                 }
                             ],
                             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -1017,7 +1021,7 @@
                                 },
                                 {
                                     "name": "xDist",
-                                    "ioValue": 5
+                                    "ioValue": 10
                                 },
                                 {
                                     "name": "yDist",
@@ -1043,7 +1047,7 @@
                                 },
                                 {
                                     "name": "xDist",
-                                    "ioValue": -5
+                                    "ioValue": -10
                                 },
                                 {
                                     "name": "yDist",
@@ -1065,7 +1069,7 @@
                             "ioValues": [
                                 {
                                     "name": "x",
-                                    "ioValue": 10
+                                    "ioValue": 20
                                 }
                             ],
                             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -1080,7 +1084,7 @@
                             "ioValues": [
                                 {
                                     "name": "x",
-                                    "ioValue": 10
+                                    "ioValue": 20
                                 }
                             ],
                             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -1370,7 +1374,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 10
+                            "ioValue": 12
                         },
                         {
                             "name": "yDist",
@@ -1378,7 +1382,7 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 15
+                            "ioValue": 14.75
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -1396,11 +1400,11 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 10
+                            "ioValue": 12
                         },
                         {
                             "name": "yDist",
-                            "ioValue": -5
+                            "ioValue": -10
                         },
                         {
                             "name": "zDist",
@@ -1412,8 +1416,8 @@
                 {
                     "atomType": "Join",
                     "name": "Assembly",
-                    "x": 0.6612244897959183,
-                    "y": 0.38187702265372164,
+                    "x": 0.726530612244898,
+                    "y": 0.26666666666666666,
                     "uniqueID": 1735574941664,
                     "ioValues": [
                         {
@@ -1450,11 +1454,11 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 10
+                            "ioValue": 12
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 5
+                            "ioValue": 10
                         },
                         {
                             "name": "zDist",
@@ -1492,7 +1496,7 @@
                     "ioValues": [
                         {
                             "name": "w",
-                            "ioValue": 10
+                            "ioValue": 20
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -1507,7 +1511,7 @@
                     "ioValues": [
                         {
                             "name": "l",
-                            "ioValue": 20
+                            "ioValue": 24
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -1526,11 +1530,11 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": -10
+                            "ioValue": -12
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 5
+                            "ioValue": 10
                         },
                         {
                             "name": "zDist",
@@ -1548,7 +1552,7 @@
                     "ioValues": [
                         {
                             "name": "w",
-                            "ioValue": 10
+                            "ioValue": 20
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -1563,7 +1567,7 @@
                     "ioValues": [
                         {
                             "name": "l",
-                            "ioValue": 20
+                            "ioValue": 24
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -1582,11 +1586,11 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": -10
+                            "ioValue": -12
                         },
                         {
                             "name": "yDist",
-                            "ioValue": -5
+                            "ioValue": -10
                         },
                         {
                             "name": "zDist",
@@ -1608,7 +1612,7 @@
                         },
                         {
                             "name": "w",
-                            "ioValue": 4.5
+                            "ioValue": 5
                         },
                         {
                             "name": "t",
@@ -1641,7 +1645,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": -10
+                            "ioValue": -12
                         },
                         {
                             "name": "yDist",
@@ -1649,7 +1653,7 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 15
+                            "ioValue": 14.75
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -1683,7 +1687,7 @@
                     "ioValues": [
                         {
                             "name": "l",
-                            "ioValue": 20
+                            "ioValue": 24
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -1698,7 +1702,7 @@
                     "ioValues": [
                         {
                             "name": "l",
-                            "ioValue": 20
+                            "ioValue": 24
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -2040,7 +2044,7 @@
             "atomType": "Input",
             "name": "table height",
             "x": 0.04,
-            "y": 0.7443365695792881,
+            "y": 0.29393939393939394,
             "uniqueID": 1735575553920,
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
@@ -2084,7 +2088,7 @@
             "ioValues": [
                 {
                     "name": "Table width",
-                    "ioValue": 24
+                    "ioValue": 20
                 },
                 {
                     "name": "table height",
@@ -2141,13 +2145,13 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.29795918367346935,
+                    "x": 0.29591836734693877,
                     "y": 0.3727272727272727,
                     "uniqueID": 1735664782809,
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 24
+                            "ioValue": 20
                         },
                         {
                             "name": "y length",
@@ -2241,7 +2245,7 @@
             "ioValues": [
                 {
                     "name": "w",
-                    "ioValue": 24
+                    "ioValue": 20
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -2263,6 +2267,16 @@
             "x": 0.04,
             "y": 0.3787878787878788,
             "uniqueID": 1735664962960,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Input",
+            "name": "leg width",
+            "x": 0.04,
+            "y": 0.7393939393939394,
+            "uniqueID": 1735665411877,
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
             "type": "number"
@@ -2296,6 +2310,13 @@
             "ap2Primary": false,
             "ap1ID": 1735430025770,
             "ap2ID": 1735417670097
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Table width",
+            "ap2Primary": false,
+            "ap1ID": 1735430025770,
+            "ap2ID": 1735430491941
         },
         {
             "ap1Name": "Geometry",
@@ -2366,6 +2387,20 @@
             "ap2Primary": false,
             "ap1ID": 1735664938397,
             "ap2ID": 1735417670097
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "table length",
+            "ap2Primary": false,
+            "ap1ID": 1735664962960,
+            "ap2ID": 1735430491941
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "leg width",
+            "ap2Primary": false,
+            "ap1ID": 1735665411877,
+            "ap2ID": 1735430491941
         }
     ],
     "unitsKey": "Inches",
