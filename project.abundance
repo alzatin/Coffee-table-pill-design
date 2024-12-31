@@ -2162,13 +2162,13 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.3479591836734694,
-                    "y": 0.2090909090909091,
+                    "x": 0.34591836734693876,
+                    "y": 0.22727272727272727,
                     "uniqueID": 1735664782809,
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 20
+                            "ioValue": 40
                         },
                         {
                             "name": "y length",
@@ -2239,7 +2239,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 4.8
+                            "ioValue": 9.6
                         },
                         {
                             "name": "yDist",
@@ -2254,7 +2254,7 @@
                 },
                 {
                     "atomType": "Equation",
-                    "name": "w/5",
+                    "name": "w/2.5",
                     "x": 0.3010204081632653,
                     "y": 0.6363636363636364,
                     "uniqueID": 1735666130984,
@@ -2265,13 +2265,13 @@
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "w/5"
+                    "currentEquation": "w/2.5"
                 },
                 {
                     "atomType": "Intersection",
                     "name": "Intersection",
-                    "x": 0.5908163265306122,
-                    "y": 0.2090909090909091,
+                    "x": 0.5989795918367347,
+                    "y": 0.19393939393939394,
                     "uniqueID": 1735666155776,
                     "ioValues": [
                         {
@@ -2288,8 +2288,8 @@
                 {
                     "atomType": "Join",
                     "name": "Fusion",
-                    "x": 0.6489795918367347,
-                    "y": 0.4363636363636364,
+                    "x": 0.6469387755102041,
+                    "y": 0.42727272727272725,
                     "uniqueID": 1735666446186,
                     "ioValues": [
                         {
@@ -2312,13 +2312,13 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.41326530612244894,
-                    "y": 0.3727272727272727,
+                    "x": 0.4112244897959184,
+                    "y": 0.3787878787878788,
                     "uniqueID": 1735666609240,
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 10
+                            "ioValue": 20
                         },
                         {
                             "name": "y length",
@@ -2340,7 +2340,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": -4.8
+                            "ioValue": -9.6
                         },
                         {
                             "name": "yDist",
@@ -2355,9 +2355,9 @@
                 },
                 {
                     "atomType": "Equation",
-                    "name": "-w/5",
-                    "x": 0.37755102040816324,
-                    "y": 0.7363636363636363,
+                    "name": "-w/2.5",
+                    "x": 0.3826530612244898,
+                    "y": 0.7303030303030303,
                     "uniqueID": 1735666766485,
                     "ioValues": [
                         {
@@ -2366,7 +2366,7 @@
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "-w/5"
+                    "currentEquation": "-w/2.5"
                 },
                 {
                     "atomType": "Intersection",
@@ -2508,8 +2508,8 @@
                 {
                     "atomType": "Join",
                     "name": "Assembly",
-                    "x": 0.9061224489795918,
-                    "y": 0.5848484848484848,
+                    "x": 0.910204081632653,
+                    "y": 0.5757575757575757,
                     "uniqueID": 1735667257356,
                     "ioValues": [
                         {
@@ -2584,13 +2584,6 @@
             "allConnectors": [
                 {
                     "ap1Name": "number or geometry",
-                    "ap2Name": "x length",
-                    "ap2Primary": false,
-                    "ap1ID": 1735664544038,
-                    "ap2ID": 1735664782809
-                },
-                {
-                    "ap1Name": "number or geometry",
                     "ap2Name": "w",
                     "ap2Primary": false,
                     "ap1ID": 1735664544038,
@@ -2609,6 +2602,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1735664544038,
                     "ap2ID": 1735667549187
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "x length",
+                    "ap2Primary": false,
+                    "ap1ID": 1735664544038,
+                    "ap2ID": 1735666609240
                 },
                 {
                     "ap1Name": "number or geometry",
@@ -2833,13 +2833,6 @@
                     "ap2Primary": false,
                     "ap1ID": 1735667512146,
                     "ap2ID": 1735664782809
-                },
-                {
-                    "ap1Name": "result",
-                    "ap2Name": "x length",
-                    "ap2Primary": false,
-                    "ap1ID": 1735667549187,
-                    "ap2ID": 1735666609240
                 }
             ],
             "fileTypeVersion": 1,
