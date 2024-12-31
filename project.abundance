@@ -449,8 +449,8 @@
         {
             "atomType": "Molecule",
             "name": "Undercarriage 1",
-            "x": 0.5438775510204082,
-            "y": 0.593939393939394,
+            "x": 0.5346938775510205,
+            "y": 0.5181818181818182,
             "uniqueID": 1735430491941,
             "ioValues": [
                 {
@@ -1561,8 +1561,8 @@
                 {
                     "atomType": "Equation",
                     "name": "-l/2",
-                    "x": 0.35918367346938773,
-                    "y": 0.6787878787878787,
+                    "x": 0.3663265306122449,
+                    "y": 0.6818181818181819,
                     "uniqueID": 1735575276394,
                     "ioValues": [
                         {
@@ -1603,7 +1603,7 @@
                     "atomType": "Equation",
                     "name": "h - (w/2) - t",
                     "x": 0.4030612244897959,
-                    "y": 0.8878787878787878,
+                    "y": 0.8999999999999999,
                     "uniqueID": 1735577118524,
                     "ioValues": [
                         {
@@ -1661,7 +1661,7 @@
                 {
                     "atomType": "Join",
                     "name": "Assembly",
-                    "x": 0.7469387755102042,
+                    "x": 0.7459183673469388,
                     "y": 0.6757575757575758,
                     "uniqueID": 1735663900147,
                     "ioValues": [
@@ -1696,8 +1696,8 @@
                 {
                     "atomType": "Equation",
                     "name": "-l/2",
-                    "x": 0.5438775510204082,
-                    "y": 0.9363636363636364,
+                    "x": 0.539795918367347,
+                    "y": 0.9454545454545454,
                     "uniqueID": 1735663959675,
                     "ioValues": [
                         {
@@ -2053,8 +2053,8 @@
         {
             "atomType": "Equation",
             "name": "h - w",
-            "x": 0.3714285714285714,
-            "y": 0.43365695792880254,
+            "x": 0.4040816326530612,
+            "y": 0.38181818181818183,
             "uniqueID": 1735575632785,
             "ioValues": [
                 {
@@ -2082,8 +2082,8 @@
         {
             "atomType": "Molecule",
             "name": "undercarriage 2",
-            "x": 0.42142857142857143,
-            "y": 0.8090909090909092,
+            "x": 0.6448979591836734,
+            "y": 0.709090909090909,
             "uniqueID": 1735664543921,
             "ioValues": [
                 {
@@ -2116,7 +2116,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1735664543130,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1735666989875
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -2149,8 +2154,8 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.35714285714285715,
-                    "y": 0.2636363636363636,
+                    "x": 0.363265306122449,
+                    "y": 0.25757575757575757,
                     "uniqueID": 1735664782809,
                     "ioValues": [
                         {
@@ -2242,8 +2247,8 @@
                 {
                     "atomType": "Equation",
                     "name": "w/5",
-                    "x": 0.35306122448979593,
-                    "y": 0.6757575757575758,
+                    "x": 0.3153061224489796,
+                    "y": 0.6333333333333333,
                     "uniqueID": 1735666130984,
                     "ioValues": [
                         {
@@ -2275,8 +2280,8 @@
                 {
                     "atomType": "Join",
                     "name": "Fusion",
-                    "x": 0.7979591836734694,
-                    "y": 0.5454545454545455,
+                    "x": 0.6744897959183673,
+                    "y": 0.41212121212121217,
                     "uniqueID": 1735666446186,
                     "ioValues": [
                         {
@@ -2299,8 +2304,8 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.4061224489795919,
-                    "y": 0.41515151515151516,
+                    "x": 0.39285714285714285,
+                    "y": 0.3848484848484849,
                     "uniqueID": 1735666609240,
                     "ioValues": [
                         {
@@ -2343,8 +2348,8 @@
                 {
                     "atomType": "Equation",
                     "name": "-w/5",
-                    "x": 0.4020408163265306,
-                    "y": 0.7272727272727273,
+                    "x": 0.37755102040816324,
+                    "y": 0.7363636363636363,
                     "uniqueID": 1735666766485,
                     "ioValues": [
                         {
@@ -2372,6 +2377,50 @@
                         }
                     ],
                     "description": "The space shared by two shapes."
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.7540816326530612,
+                    "y": 0.4181818181818182,
+                    "uniqueID": 1735666946055,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1735666446186
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 0.75
+                        }
+                    ],
+                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                },
+                {
+                    "atomType": "Rotate",
+                    "name": "Rotate",
+                    "x": 0.8326530612244898,
+                    "y": 0.7242424242424242,
+                    "uniqueID": 1735666989875,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1735666946055
+                        },
+                        {
+                            "name": "x-axis degrees",
+                            "ioValue": -90
+                        },
+                        {
+                            "name": "y-axis degrees",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "z-axis degrees",
+                            "ioValue": 0
+                        }
+                    ],
+                    "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
                 }
             ],
             "allConnectors": [
@@ -2381,6 +2430,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1735664544038,
                     "ap2ID": 1735664782809
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "height",
+                    "ap2Primary": false,
+                    "ap1ID": 1735664543516,
+                    "ap2ID": 1735666946055
                 },
                 {
                     "ap1Name": "geometry",
@@ -2475,6 +2531,13 @@
                 },
                 {
                     "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1735666446186,
+                    "ap2ID": 1735666946055
+                },
+                {
+                    "ap1Name": "geometry",
                     "ap2Name": "Shape 3",
                     "ap2Primary": false,
                     "ap1ID": 1735666609240,
@@ -2500,10 +2563,24 @@
                     "ap2Primary": false,
                     "ap1ID": 1735666788026,
                     "ap2ID": 1735666446186
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1735666946055,
+                    "ap2ID": 1735666989875
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1735666989875,
+                    "ap2ID": 1735664543130
                 }
             ],
             "fileTypeVersion": 1,
-            "compiledBom": {}
+            "compiledBom": []
         },
         {
             "atomType": "Equation",
@@ -2549,6 +2626,25 @@
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
             "type": "number"
+        },
+        {
+            "atomType": "Equation",
+            "name": "x + y",
+            "x": 0.5020408163265306,
+            "y": 0.8181818181818181,
+            "uniqueID": 1735667086154,
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 1
+                },
+                {
+                    "name": "y",
+                    "ioValue": 1
+                }
+            ],
+            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+            "currentEquation": "x + y"
         }
     ],
     "allConnectors": [
