@@ -50,8 +50,8 @@
         {
             "atomType": "Molecule",
             "name": "Table top",
-            "x": 0.2316326530612245,
-            "y": 0.2636363636363636,
+            "x": 0.3193877551020408,
+            "y": 0.2606060606060606,
             "uniqueID": 1735417670097,
             "ioValues": [
                 {
@@ -60,7 +60,7 @@
                 },
                 {
                     "name": "table width",
-                    "ioValue": 20
+                    "ioValue": 19.25
                 },
                 {
                     "name": "top thickness",
@@ -87,13 +87,13 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.2520408163265306,
-                    "y": 0.3365695792880259,
+                    "x": 0.27346938775510204,
+                    "y": 0.2606060606060606,
                     "uniqueID": 1735417706848,
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 20
+                            "ioValue": 19.25
                         }
                     ],
                     "description": "Creates a new circle."
@@ -117,11 +117,11 @@
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 28
+                            "ioValue": 28.75
                         },
                         {
                             "name": "y length",
-                            "ioValue": 20
+                            "ioValue": 19.25
                         }
                     ],
                     "description": "Creates a new rectangle."
@@ -139,7 +139,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 14
+                            "ioValue": 14.375
                         },
                         {
                             "name": "yDist",
@@ -165,7 +165,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": -14
+                            "ioValue": -14.375
                         },
                         {
                             "name": "yDist",
@@ -181,8 +181,8 @@
                 {
                     "atomType": "Join",
                     "name": "Fusion",
-                    "x": 0.610204081632653,
-                    "y": 0.3786407766990291,
+                    "x": 0.6020408163265306,
+                    "y": 0.3848484848484849,
                     "uniqueID": 1735417786863,
                     "ioValues": [
                         {
@@ -199,7 +199,7 @@
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
-                    "unionType": "Assembly",
+                    "unionType": "Fusion",
                     "unionIndex": 1
                 },
                 {
@@ -215,7 +215,7 @@
                         },
                         {
                             "name": "y",
-                            "ioValue": 20
+                            "ioValue": 19.25
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -234,7 +234,7 @@
                         },
                         {
                             "name": "y",
-                            "ioValue": 20
+                            "ioValue": 19.25
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -263,7 +263,7 @@
                         },
                         {
                             "name": "y",
-                            "ioValue": 20
+                            "ioValue": 19.25
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -282,8 +282,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.7418367346938776,
-                    "y": 0.6051779935275081,
+                    "x": 0.7540816326530612,
+                    "y": 0.40909090909090906,
                     "uniqueID": 1735430359059,
                     "ioValues": [
                         {
@@ -449,7 +449,7 @@
         {
             "atomType": "Molecule",
             "name": "Undercarriage 1",
-            "x": 0.4459183673469388,
+            "x": 0.44693877551020406,
             "y": 0.596969696969697,
             "uniqueID": 1735430491941,
             "ioValues": [
@@ -1408,7 +1408,7 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 15.25
+                            "ioValue": 16
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -1496,8 +1496,8 @@
                 {
                     "atomType": "Join",
                     "name": "Assembly",
-                    "x": 0.8418367346938774,
-                    "y": 0.48787878787878786,
+                    "x": 0.8459183673469387,
+                    "y": 0.48484848484848486,
                     "uniqueID": 1735575003722,
                     "ioValues": [
                         {
@@ -1627,9 +1627,9 @@
                 },
                 {
                     "atomType": "Equation",
-                    "name": "h - (w/2) - t",
-                    "x": 0.4030612244897959,
-                    "y": 0.8999999999999999,
+                    "name": "h - (w/2)",
+                    "x": 0.4061224489795919,
+                    "y": 0.890909090909091,
                     "uniqueID": 1735577118524,
                     "ioValues": [
                         {
@@ -1639,14 +1639,10 @@
                         {
                             "name": "w",
                             "ioValue": 4
-                        },
-                        {
-                            "name": "t",
-                            "ioValue": 0.75
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "h - (w/2) - t"
+                    "currentEquation": "h - (w/2)"
                 },
                 {
                     "atomType": "Input",
@@ -1679,7 +1675,7 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 15.25
+                            "ioValue": 16
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -1852,13 +1848,6 @@
                     "ap2Primary": false,
                     "ap1ID": 1735574425725,
                     "ap2ID": 1735574204580
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "t",
-                    "ap2Primary": false,
-                    "ap1ID": 1735574425725,
-                    "ap2ID": 1735577118524
                 },
                 {
                     "ap1Name": "geometry",
@@ -2049,8 +2038,8 @@
         {
             "atomType": "Join",
             "name": "Assembly",
-            "x": 0.7561224489795918,
-            "y": 0.5060606060606061,
+            "x": 0.7581632653061225,
+            "y": 0.503030303030303,
             "uniqueID": 1735575380188,
             "ioValues": [
                 {
@@ -2073,8 +2062,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.6857142857142857,
-            "y": 0.296969696969697,
+            "x": 0.6806122448979591,
+            "y": 0.2787878787878788,
             "uniqueID": 1735575431271,
             "ioValues": [
                 {
@@ -2091,7 +2080,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 17.25
+                    "ioValue": 18
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -2108,7 +2097,7 @@
         },
         {
             "atomType": "Equation",
-            "name": "h - w",
+            "name": "h",
             "x": 0.4040816326530612,
             "y": 0.38181818181818183,
             "uniqueID": 1735575632785,
@@ -2116,14 +2105,10 @@
                 {
                     "name": "h",
                     "ioValue": 18
-                },
-                {
-                    "name": "w",
-                    "ioValue": 0.75
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-            "currentEquation": "h - w"
+            "currentEquation": "h"
         },
         {
             "atomType": "Input",
@@ -2138,8 +2123,8 @@
         {
             "atomType": "Molecule",
             "name": "undercarriage 2",
-            "x": 0.29795918367346935,
-            "y": 0.8030303030303031,
+            "x": 0.29591836734693877,
+            "y": 0.8,
             "uniqueID": 1735664543921,
             "ioValues": [
                 {
@@ -2485,8 +2470,8 @@
                 {
                     "atomType": "Equation",
                     "name": "h - (w/2)",
-                    "x": 0.48775510204081635,
-                    "y": 0.8545454545454545,
+                    "x": 0.49489795918367346,
+                    "y": 0.8515151515151516,
                     "uniqueID": 1735667228813,
                     "ioValues": [
                         {
@@ -2938,8 +2923,8 @@
         {
             "atomType": "Color",
             "name": "Color",
-            "x": 0.48775510204081635,
-            "y": 0.2181818181818182,
+            "x": 0.49183673469387756,
+            "y": 0.21515151515151515,
             "uniqueID": 1735668284290,
             "ioValues": [
                 {
@@ -2952,9 +2937,9 @@
         },
         {
             "atomType": "Tag",
-            "name": ",cutLayout",
-            "x": 0.3408163265306123,
-            "y": 0.19393939393939394,
+            "name": "cutLayout,",
+            "x": 0.42653061224489797,
+            "y": 0.16969696969696968,
             "uniqueID": 1735668330535,
             "ioValues": [
                 {
@@ -2964,8 +2949,8 @@
             ],
             "description": "Tags geometry so that it can be extracted later.",
             "tags": [
-                "",
-                "cutLayout"
+                "cutLayout",
+                ""
             ],
             "cutTag": true
         },
@@ -3120,6 +3105,25 @@
                     "rotate": 0
                 }
             ]
+        },
+        {
+            "atomType": "Equation",
+            "name": "w - t",
+            "x": 0.2204081632653061,
+            "y": 0.2515151515151515,
+            "uniqueID": 1735668722608,
+            "ioValues": [
+                {
+                    "name": "w",
+                    "ioValue": 20
+                },
+                {
+                    "name": "t",
+                    "ioValue": 0.75
+                }
+            ],
+            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+            "currentEquation": "w - t"
         }
     ],
     "allConnectors": [
@@ -3139,17 +3143,17 @@
         },
         {
             "ap1Name": "number or geometry",
-            "ap2Name": "table width",
-            "ap2Primary": false,
-            "ap1ID": 1735430025770,
-            "ap2ID": 1735417670097
-        },
-        {
-            "ap1Name": "number or geometry",
             "ap2Name": "Table width",
             "ap2Primary": false,
             "ap1ID": 1735430025770,
             "ap2ID": 1735430491941
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "w",
+            "ap2Primary": false,
+            "ap1ID": 1735430025770,
+            "ap2ID": 1735668722608
         },
         {
             "ap1Name": "Geometry",
@@ -3202,13 +3206,6 @@
         },
         {
             "ap1Name": "number or geometry",
-            "ap2Name": "w",
-            "ap2Primary": false,
-            "ap1ID": 1735575643398,
-            "ap2ID": 1735575632785
-        },
-        {
-            "ap1Name": "number or geometry",
             "ap2Name": "wood thick",
             "ap2Primary": false,
             "ap1ID": 1735575643398,
@@ -3220,6 +3217,13 @@
             "ap2Primary": false,
             "ap1ID": 1735575643398,
             "ap2ID": 1735664543921
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "t",
+            "ap2Primary": false,
+            "ap1ID": 1735575643398,
+            "ap2ID": 1735668722608
         },
         {
             "ap1Name": "Geometry",
@@ -3276,6 +3280,13 @@
             "ap2Primary": true,
             "ap1ID": 1735668330535,
             "ap2ID": 1735668284290
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "table width",
+            "ap2Primary": false,
+            "ap1ID": 1735668722608,
+            "ap2ID": 1735417670097
         }
     ],
     "unitsKey": "Inches",
