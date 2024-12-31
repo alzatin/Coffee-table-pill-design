@@ -2177,13 +2177,13 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.30612244897959184,
-                    "y": 0.6545454545454545,
+                    "x": 0.32448979591836735,
+                    "y": 0.6696969696969697,
                     "uniqueID": 1735664843175,
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 20
+                            "ioValue": 10
                         }
                     ],
                     "description": "Creates a new circle."
@@ -2200,9 +2200,9 @@
                 },
                 {
                     "atomType": "Equation",
-                    "name": "x * 4",
-                    "x": 0.17244897959183672,
-                    "y": 0.6696969696969697,
+                    "name": "x * 2",
+                    "x": 0.17142857142857143,
+                    "y": 0.6575757575757576,
                     "uniqueID": 1735666101775,
                     "ioValues": [
                         {
@@ -2211,13 +2211,13 @@
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "x * 4"
+                    "currentEquation": "x * 2"
                 },
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.48775510204081635,
-                    "y": 0.603030303030303,
+                    "x": 0.4826530612244898,
+                    "y": 0.609090909090909,
                     "uniqueID": 1735666120781,
                     "ioValues": [
                         {
@@ -2226,11 +2226,11 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 12
+                            "ioValue": 4.8
                         },
                         {
                             "name": "yDist",
-                            "ioValue": -8
+                            "ioValue": -2
                         },
                         {
                             "name": "zDist",
@@ -2241,9 +2241,9 @@
                 },
                 {
                     "atomType": "Equation",
-                    "name": "w/2",
-                    "x": 0.33877551020408164,
-                    "y": 0.8272727272727273,
+                    "name": "w/5",
+                    "x": 0.31224489795918364,
+                    "y": 0.8090909090909092,
                     "uniqueID": 1735666130984,
                     "ioValues": [
                         {
@@ -2252,13 +2252,13 @@
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "w/2"
+                    "currentEquation": "w/5"
                 },
                 {
                     "atomType": "Intersection",
                     "name": "Intersection",
-                    "x": 0.6081632653061224,
-                    "y": 0.38181818181818183,
+                    "x": 0.6306122448979592,
+                    "y": 0.2636363636363636,
                     "uniqueID": 1735666155776,
                     "ioValues": [
                         {
@@ -2271,6 +2271,22 @@
                         }
                     ],
                     "description": "The space shared by two shapes."
+                },
+                {
+                    "atomType": "Join",
+                    "name": "Fusion",
+                    "x": 0.7459183673469388,
+                    "y": 0.5727272727272728,
+                    "uniqueID": 1735666446186,
+                    "ioValues": [
+                        {
+                            "name": "Shape 1",
+                            "ioValue": 1735666155776
+                        }
+                    ],
+                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+                    "unionType": "Fusion",
+                    "unionIndex": 1
                 }
             ],
             "allConnectors": [
@@ -2336,6 +2352,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1735666130984,
                     "ap2ID": 1735666120781
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 1",
+                    "ap2Primary": false,
+                    "ap1ID": 1735666155776,
+                    "ap2ID": 1735666446186
                 }
             ],
             "fileTypeVersion": 1,
