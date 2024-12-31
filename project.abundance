@@ -181,8 +181,8 @@
                 {
                     "atomType": "Join",
                     "name": "Fusion",
-                    "x": 0.6020408163265306,
-                    "y": 0.3848484848484849,
+                    "x": 0.6030612244897959,
+                    "y": 0.3787878787878788,
                     "uniqueID": 1735417786863,
                     "ioValues": [
                         {
@@ -282,8 +282,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.7540816326530612,
-                    "y": 0.40909090909090906,
+                    "x": 0.7561224489795918,
+                    "y": 0.593939393939394,
                     "uniqueID": 1735430359059,
                     "ioValues": [
                         {
@@ -449,8 +449,8 @@
         {
             "atomType": "Molecule",
             "name": "Undercarriage 1",
-            "x": 0.44693877551020406,
-            "y": 0.596969696969697,
+            "x": 0.44285714285714284,
+            "y": 0.593939393939394,
             "uniqueID": 1735430491941,
             "ioValues": [
                 {
@@ -553,8 +553,8 @@
                         {
                             "atomType": "Rectangle",
                             "name": "Rectangle",
-                            "x": 0.3010204081632653,
-                            "y": 0.6051779935275081,
+                            "x": 0.3510204081632653,
+                            "y": 0.6848484848484848,
                             "uniqueID": 1735430557453,
                             "ioValues": [
                                 {
@@ -563,7 +563,7 @@
                                 },
                                 {
                                     "name": "y length",
-                                    "ioValue": 18
+                                    "ioValue": 18.75
                                 }
                             ],
                             "description": "Creates a new rectangle."
@@ -591,8 +591,8 @@
                         {
                             "atomType": "Extrude",
                             "name": "Extrude",
-                            "x": 0.5336734693877551,
-                            "y": 0.47572815533980584,
+                            "x": 0.539795918367347,
+                            "y": 0.4575757575757576,
                             "uniqueID": 1735430721192,
                             "ioValues": [
                                 {
@@ -646,8 +646,8 @@
                         {
                             "atomType": "Rotate",
                             "name": "Rotate",
-                            "x": 0.6714285714285715,
-                            "y": 0.4724919093851133,
+                            "x": 0.6826530612244899,
+                            "y": 0.30303030303030304,
                             "uniqueID": 1735573953065,
                             "ioValues": [
                                 {
@@ -672,8 +672,8 @@
                         {
                             "atomType": "Move",
                             "name": "Move",
-                            "x": 0.8,
-                            "y": 0.6310679611650486,
+                            "x": 0.7959183673469388,
+                            "y": 0.5363636363636364,
                             "uniqueID": 1735573962720,
                             "ioValues": [
                                 {
@@ -690,25 +690,29 @@
                                 },
                                 {
                                     "name": "zDist",
-                                    "ioValue": 9
+                                    "ioValue": 9.5
                                 }
                             ],
                             "description": "Moves a shape laterally in X, Y, Z."
                         },
                         {
                             "atomType": "Equation",
-                            "name": "h/ 2",
-                            "x": 0.5265306122448979,
-                            "y": 0.8381877022653721,
+                            "name": "h/ 2 + t/2",
+                            "x": 0.5326530612244897,
+                            "y": 0.8303030303030303,
                             "uniqueID": 1735573985952,
                             "ioValues": [
                                 {
                                     "name": "h",
                                     "ioValue": 18
+                                },
+                                {
+                                    "name": "t",
+                                    "ioValue": 1
                                 }
                             ],
                             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                            "currentEquation": "h/ 2"
+                            "currentEquation": "h/ 2 + t/2"
                         },
                         {
                             "atomType": "Equation",
@@ -724,6 +728,25 @@
                             ],
                             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
                             "currentEquation": "t/2"
+                        },
+                        {
+                            "atomType": "Equation",
+                            "name": "h + t",
+                            "x": 0.21632653061224488,
+                            "y": 0.8575757575757575,
+                            "uniqueID": 1735669037398,
+                            "ioValues": [
+                                {
+                                    "name": "h",
+                                    "ioValue": 18
+                                },
+                                {
+                                    "name": "t",
+                                    "ioValue": 0.75
+                                }
+                            ],
+                            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                            "currentEquation": "h + t"
                         }
                     ],
                     "allConnectors": [
@@ -736,17 +759,17 @@
                         },
                         {
                             "ap1Name": "number or geometry",
-                            "ap2Name": "y length",
+                            "ap2Name": "h",
                             "ap2Primary": false,
                             "ap1ID": 1735430585962,
-                            "ap2ID": 1735430557453
+                            "ap2ID": 1735573985952
                         },
                         {
                             "ap1Name": "number or geometry",
                             "ap2Name": "h",
                             "ap2Primary": false,
                             "ap1ID": 1735430585962,
-                            "ap2ID": 1735573985952
+                            "ap2ID": 1735669037398
                         },
                         {
                             "ap1Name": "number or geometry",
@@ -784,6 +807,13 @@
                             "ap2ID": 1735574103880
                         },
                         {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "t",
+                            "ap2Primary": false,
+                            "ap1ID": 1735430979822,
+                            "ap2ID": 1735669037398
+                        },
+                        {
                             "ap1Name": "geometry",
                             "ap2Name": "geometry",
                             "ap2Primary": true,
@@ -810,6 +840,13 @@
                             "ap2Primary": false,
                             "ap1ID": 1735574103880,
                             "ap2ID": 1735573962720
+                        },
+                        {
+                            "ap1Name": "result",
+                            "ap2Name": "y length",
+                            "ap2Primary": false,
+                            "ap1ID": 1735669037398,
+                            "ap2ID": 1735430557453
                         }
                     ],
                     "fileTypeVersion": 1,
@@ -2038,8 +2075,8 @@
         {
             "atomType": "Join",
             "name": "Assembly",
-            "x": 0.7581632653061225,
-            "y": 0.503030303030303,
+            "x": 0.6857142857142857,
+            "y": 0.5272727272727272,
             "uniqueID": 1735575380188,
             "ioValues": [
                 {
@@ -2051,7 +2088,7 @@
                     "ioValue": 1735430491941
                 },
                 {
-                    "name": "Shape 8",
+                    "name": "Shape 9",
                     "ioValue": 1735664543921
                 }
             ],
@@ -2062,8 +2099,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.6806122448979591,
-            "y": 0.2787878787878788,
+            "x": 0.6448979591836734,
+            "y": 0.26666666666666666,
             "uniqueID": 1735575431271,
             "ioValues": [
                 {
@@ -2123,8 +2160,8 @@
         {
             "atomType": "Molecule",
             "name": "undercarriage 2",
-            "x": 0.29591836734693877,
-            "y": 0.8,
+            "x": 0.38571428571428573,
+            "y": 0.8484848484848485,
             "uniqueID": 1735664543921,
             "ioValues": [
                 {
@@ -2343,7 +2380,7 @@
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
-                    "unionType": "Fusion",
+                    "unionType": "Assembly",
                     "unionIndex": 1
                 },
                 {
@@ -2541,8 +2578,8 @@
                 {
                     "atomType": "Join",
                     "name": "Assembly",
-                    "x": 0.910204081632653,
-                    "y": 0.5757575757575757,
+                    "x": 0.8918367346938776,
+                    "y": 0.5272727272727272,
                     "uniqueID": 1735667257356,
                     "ioValues": [
                         {
@@ -2615,9 +2652,9 @@
                 },
                 {
                     "atomType": "Tag",
-                    "name": ",cutLayout",
-                    "x": 0.75,
-                    "y": 0.296969696969697,
+                    "name": "cutLayout,",
+                    "x": 0.7581632653061225,
+                    "y": 0.19393939393939394,
                     "uniqueID": 1735668502950,
                     "ioValues": [
                         {
@@ -2627,8 +2664,8 @@
                     ],
                     "description": "Tags geometry so that it can be extracted later.",
                     "tags": [
-                        "",
-                        "cutLayout"
+                        "cutLayout",
+                        ""
                     ],
                     "cutTag": true
                 }
@@ -2923,8 +2960,8 @@
         {
             "atomType": "Color",
             "name": "Color",
-            "x": 0.49183673469387756,
-            "y": 0.21515151515151515,
+            "x": 0.5336734693877551,
+            "y": 0.22424242424242424,
             "uniqueID": 1735668284290,
             "ioValues": [
                 {
@@ -2957,8 +2994,8 @@
         {
             "atomType": "CutLayout",
             "name": "Cut Layout",
-            "x": 0.760204081632653,
-            "y": 0.7636363636363637,
+            "x": 0.7846938775510205,
+            "y": 0.7757575757575758,
             "uniqueID": 1735668436327,
             "ioValues": [
                 {
@@ -3227,7 +3264,7 @@
         },
         {
             "ap1Name": "Geometry",
-            "ap2Name": "Shape 8",
+            "ap2Name": "Shape 9",
             "ap2Primary": false,
             "ap1ID": 1735664543921,
             "ap2ID": 1735575380188
