@@ -2149,8 +2149,8 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.34285714285714286,
-                    "y": 0.4454545454545455,
+                    "x": 0.35714285714285715,
+                    "y": 0.2636363636363636,
                     "uniqueID": 1735664782809,
                     "ioValues": [
                         {
@@ -2177,8 +2177,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.32448979591836735,
-                    "y": 0.6696969696969697,
+                    "x": 0.3326530612244898,
+                    "y": 0.5151515151515151,
                     "uniqueID": 1735664843175,
                     "ioValues": [
                         {
@@ -2216,8 +2216,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.4826530612244898,
-                    "y": 0.609090909090909,
+                    "x": 0.5142857142857143,
+                    "y": 0.5606060606060607,
                     "uniqueID": 1735666120781,
                     "ioValues": [
                         {
@@ -2242,8 +2242,8 @@
                 {
                     "atomType": "Equation",
                     "name": "w/5",
-                    "x": 0.31224489795918364,
-                    "y": 0.8090909090909092,
+                    "x": 0.35306122448979593,
+                    "y": 0.6757575757575758,
                     "uniqueID": 1735666130984,
                     "ioValues": [
                         {
@@ -2257,8 +2257,8 @@
                 {
                     "atomType": "Intersection",
                     "name": "Intersection",
-                    "x": 0.6306122448979592,
-                    "y": 0.2636363636363636,
+                    "x": 0.6112244897959184,
+                    "y": 0.24242424242424243,
                     "uniqueID": 1735666155776,
                     "ioValues": [
                         {
@@ -2275,18 +2275,103 @@
                 {
                     "atomType": "Join",
                     "name": "Fusion",
-                    "x": 0.7459183673469388,
-                    "y": 0.5727272727272728,
+                    "x": 0.7979591836734694,
+                    "y": 0.5454545454545455,
                     "uniqueID": 1735666446186,
                     "ioValues": [
                         {
                             "name": "Shape 1",
                             "ioValue": 1735666155776
+                        },
+                        {
+                            "name": "Shape 3",
+                            "ioValue": 1735666609240
+                        },
+                        {
+                            "name": "Shape 5",
+                            "ioValue": 1735666788026
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
                     "unionType": "Fusion",
                     "unionIndex": 1
+                },
+                {
+                    "atomType": "Rectangle",
+                    "name": "Rectangle",
+                    "x": 0.4061224489795919,
+                    "y": 0.41515151515151516,
+                    "uniqueID": 1735666609240,
+                    "ioValues": [
+                        {
+                            "name": "x length",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "y length",
+                            "ioValue": 5
+                        }
+                    ],
+                    "description": "Creates a new rectangle."
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.5551020408163265,
+                    "y": 0.7272727272727273,
+                    "uniqueID": 1735666758639,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1735664843175
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": -4.8
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": -2
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Equation",
+                    "name": "-w/5",
+                    "x": 0.4020408163265306,
+                    "y": 0.7272727272727273,
+                    "uniqueID": 1735666766485,
+                    "ioValues": [
+                        {
+                            "name": "w",
+                            "ioValue": 24
+                        }
+                    ],
+                    "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                    "currentEquation": "-w/5"
+                },
+                {
+                    "atomType": "Intersection",
+                    "name": "Intersection",
+                    "x": 0.676530612244898,
+                    "y": 0.6909090909090909,
+                    "uniqueID": 1735666788026,
+                    "ioValues": [
+                        {
+                            "name": "geometry1",
+                            "ioValue": 1735664782809
+                        },
+                        {
+                            "name": "geometry2",
+                            "ioValue": 1735666758639
+                        }
+                    ],
+                    "description": "The space shared by two shapes."
                 }
             ],
             "allConnectors": [
@@ -2305,6 +2390,13 @@
                     "ap2ID": 1735666155776
                 },
                 {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry1",
+                    "ap2Primary": false,
+                    "ap1ID": 1735664782809,
+                    "ap2ID": 1735666788026
+                },
+                {
                     "ap1Name": "number or geometry",
                     "ap2Name": "w",
                     "ap2Primary": false,
@@ -2312,11 +2404,25 @@
                     "ap2ID": 1735666130984
                 },
                 {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "w",
+                    "ap2Primary": false,
+                    "ap1ID": 1735664803284,
+                    "ap2ID": 1735666766485
+                },
+                {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
                     "ap2Primary": true,
                     "ap1ID": 1735664843175,
                     "ap2ID": 1735666120781
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1735664843175,
+                    "ap2ID": 1735666758639
                 },
                 {
                     "ap1Name": "number or geometry",
@@ -2331,6 +2437,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1735665960177,
                     "ap2ID": 1735666101775
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "y length",
+                    "ap2Primary": false,
+                    "ap1ID": 1735665960177,
+                    "ap2ID": 1735666609240
                 },
                 {
                     "ap1Name": "result",
@@ -2358,6 +2471,34 @@
                     "ap2Name": "Shape 1",
                     "ap2Primary": false,
                     "ap1ID": 1735666155776,
+                    "ap2ID": 1735666446186
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 3",
+                    "ap2Primary": false,
+                    "ap1ID": 1735666609240,
+                    "ap2ID": 1735666446186
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry2",
+                    "ap2Primary": false,
+                    "ap1ID": 1735666758639,
+                    "ap2ID": 1735666788026
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "xDist",
+                    "ap2Primary": false,
+                    "ap1ID": 1735666766485,
+                    "ap2ID": 1735666758639
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 5",
+                    "ap2Primary": false,
+                    "ap1ID": 1735666788026,
                     "ap2ID": 1735666446186
                 }
             ],
