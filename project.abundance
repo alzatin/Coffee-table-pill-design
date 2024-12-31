@@ -428,7 +428,7 @@
             "atomType": "Input",
             "name": "Table width",
             "x": 0.04,
-            "y": 0.5857605177993528,
+            "y": 0.5878787878787879,
             "uniqueID": 1735430025770,
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
@@ -436,9 +436,9 @@
         },
         {
             "atomType": "Molecule",
-            "name": "Undercarriage",
-            "x": 0.2795918367346939,
-            "y": 0.7121212121212122,
+            "name": "Undercarriage 1",
+            "x": 0.48163265306122455,
+            "y": 0.5818181818181818,
             "uniqueID": 1735430491941,
             "ioValues": [
                 {
@@ -2005,8 +2005,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.5051020408163265,
-            "y": 0.21682847896440127,
+            "x": 0.5061224489795918,
+            "y": 0.2212121212121212,
             "uniqueID": 1735575431271,
             "ioValues": [
                 {
@@ -2066,6 +2066,85 @@
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
             "type": "number"
+        },
+        {
+            "atomType": "Molecule",
+            "name": "undercarriage 2",
+            "x": 0.4142857142857143,
+            "y": 0.8242424242424243,
+            "uniqueID": 1735664543921,
+            "ioValues": [
+                {
+                    "name": "Table width",
+                    "ioValue": 36
+                },
+                {
+                    "name": "table height",
+                    "ioValue": 18
+                },
+                {
+                    "name": "wood thick",
+                    "ioValue": 0.75
+                }
+            ],
+            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": 1735664543130,
+                    "ioValues": [],
+                    "description": "Connect geometry here to make it available in the next level up. "
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Table width",
+                    "x": 0.04,
+                    "y": 0.5857605177993528,
+                    "uniqueID": 1735664544038,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "table height",
+                    "x": 0.04,
+                    "y": 0.7443365695792881,
+                    "uniqueID": 1735664543188,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "wood thick",
+                    "x": 0.04,
+                    "y": 0.5048543689320388,
+                    "uniqueID": 1735664543516,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                }
+            ],
+            "allConnectors": [],
+            "fileTypeVersion": 1,
+            "compiledBom": {}
+        },
+        {
+            "atomType": "Equation",
+            "name": "w/2",
+            "x": 0.3010204081632653,
+            "y": 0.6636363636363636,
+            "uniqueID": 1735664634848,
+            "ioValues": [
+                {
+                    "name": "w",
+                    "ioValue": 36
+                }
+            ],
+            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+            "currentEquation": "w/2"
         }
     ],
     "allConnectors": [
@@ -2075,6 +2154,20 @@
             "ap2Primary": true,
             "ap1ID": 1735417670097,
             "ap2ID": 1735575431271
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Table width",
+            "ap2Primary": false,
+            "ap1ID": 1735430025770,
+            "ap2ID": 1735664543921
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "w",
+            "ap2Primary": false,
+            "ap1ID": 1735430025770,
+            "ap2ID": 1735664634848
         },
         {
             "ap1Name": "Geometry",
@@ -2105,6 +2198,13 @@
             "ap2ID": 1735575632785
         },
         {
+            "ap1Name": "number or geometry",
+            "ap2Name": "table height",
+            "ap2Primary": false,
+            "ap1ID": 1735575553920,
+            "ap2ID": 1735664543921
+        },
+        {
             "ap1Name": "result",
             "ap2Name": "zDist",
             "ap2Primary": false,
@@ -2117,6 +2217,27 @@
             "ap2Primary": false,
             "ap1ID": 1735575643398,
             "ap2ID": 1735575632785
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "wood thick",
+            "ap2Primary": false,
+            "ap1ID": 1735575643398,
+            "ap2ID": 1735430491941
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "wood thick",
+            "ap2Primary": false,
+            "ap1ID": 1735575643398,
+            "ap2ID": 1735664543921
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "Table width",
+            "ap2Primary": false,
+            "ap1ID": 1735664634848,
+            "ap2ID": 1735430491941
         }
     ],
     "unitsKey": "Inches",
