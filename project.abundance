@@ -19,7 +19,7 @@
         },
         {
             "name": "top length",
-            "ioValue": 48
+            "ioValue": 49
         },
         {
             "name": "table length",
@@ -56,7 +56,7 @@
             "ioValues": [
                 {
                     "name": "Table Length",
-                    "ioValue": 48
+                    "ioValue": 49
                 },
                 {
                     "name": "table width",
@@ -117,7 +117,7 @@
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 28.75
+                            "ioValue": 29.75
                         },
                         {
                             "name": "y length",
@@ -139,7 +139,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 14.375
+                            "ioValue": 14.875
                         },
                         {
                             "name": "yDist",
@@ -165,7 +165,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": -14.375
+                            "ioValue": -14.875
                         },
                         {
                             "name": "yDist",
@@ -211,7 +211,7 @@
                     "ioValues": [
                         {
                             "name": "x",
-                            "ioValue": 48
+                            "ioValue": 49
                         },
                         {
                             "name": "y",
@@ -230,7 +230,7 @@
                     "ioValues": [
                         {
                             "name": "x",
-                            "ioValue": 48
+                            "ioValue": 49
                         },
                         {
                             "name": "y",
@@ -259,7 +259,7 @@
                     "ioValues": [
                         {
                             "name": "x",
-                            "ioValue": 48
+                            "ioValue": 49
                         },
                         {
                             "name": "y",
@@ -2099,8 +2099,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.5612244897959184,
-            "y": 0.3606060606060606,
+            "x": 0.5749293119698398,
+            "y": 0.3848484848484849,
             "uniqueID": 1735575431271,
             "ioValues": [
                 {
@@ -2109,7 +2109,7 @@
                 },
                 {
                     "name": "xDist",
-                    "ioValue": 0
+                    "ioValue": 1
                 },
                 {
                     "name": "yDist",
