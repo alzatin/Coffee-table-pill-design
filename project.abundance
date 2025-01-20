@@ -129,8 +129,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.42448979591836733,
-                    "y": 0.3592233009708738,
+                    "x": 0.4209431345353676,
+                    "y": 0.24545454545454543,
                     "uniqueID": 1735417764281,
                     "ioValues": [
                         {
@@ -155,8 +155,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.39285714285714285,
-                    "y": 0.5501618122977346,
+                    "x": 0.3973647711511789,
+                    "y": 0.41515151515151516,
                     "uniqueID": 1735417781080,
                     "ioValues": [
                         {
@@ -181,8 +181,8 @@
                 {
                     "atomType": "Join",
                     "name": "Fusion",
-                    "x": 0.6030612244897959,
-                    "y": 0.3787878787878788,
+                    "x": 0.6324549237170596,
+                    "y": 0.7181818181818181,
                     "uniqueID": 1735417786863,
                     "ioValues": [
                         {
@@ -199,7 +199,7 @@
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
-                    "unionType": "Assembly",
+                    "unionType": "Fusion",
                     "unionIndex": 1
                 },
                 {
@@ -2366,12 +2366,12 @@
                     "ioValue": 1735575431271
                 },
                 {
-                    "name": "Shape 7",
-                    "ioValue": 1735430491941
-                },
-                {
                     "name": "Shape 9",
                     "ioValue": 1735664543921
+                },
+                {
+                    "name": "Shape 10",
+                    "ioValue": 1735430491941
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
@@ -3320,90 +3320,90 @@
             "placements": [
                 {
                     "translate": {
-                        "x": -3.2663187980651855,
-                        "y": 10.826462745666504
+                        "x": 10.850000381469727,
+                        "y": 17.09572410583496
                     },
-                    "id": 1,
-                    "rotate": 180
+                    "id": 0,
+                    "rotate": 270
                 },
                 {
                     "translate": {
-                        "x": 15.095724141137694,
-                        "y": 32.4957494961792
+                        "x": 16.508334133972166,
+                        "y": 21.2014618
                     },
-                    "id": 0,
+                    "id": 4,
+                    "rotate": 90
+                },
+                {
+                    "translate": {
+                        "x": 45.603188308007816,
+                        "y": 36.48333313063355
+                    },
+                    "id": 3,
                     "rotate": 0
                 },
                 {
                     "translate": {
-                        "x": 39.16769540800781,
-                        "y": 8.391666369238282
+                        "x": 23.089406031396486,
+                        "y": 30.849781514990234
+                    },
+                    "id": 2,
+                    "rotate": 0
+                },
+                {
+                    "translate": {
+                        "x": 16.79006749691162,
+                        "y": 36.362497318530274
+                    },
+                    "id": 9,
+                    "rotate": 180
+                },
+                {
+                    "translate": {
+                        "x": 27.99006780308838,
+                        "y": 35.52645728146973
                     },
                     "id": 10,
                     "rotate": 0
                 },
                 {
                     "translate": {
-                        "x": 47.13791088146972,
-                        "y": 52.2171173
+                        "x": 19.0000019,
+                        "y": 28.853889981469727
                     },
-                    "id": 3,
+                    "id": 5,
+                    "rotate": 270
+                },
+                {
+                    "translate": {
+                        "x": 58.5000028,
+                        "y": 22.403889218530274
+                    },
+                    "id": 6,
+                    "rotate": 90
+                },
+                {
+                    "translate": {
+                        "x": 44.95477292030029,
+                        "y": 23.4913129463501
+                    },
+                    "id": 1,
                     "rotate": 180
                 },
                 {
                     "translate": {
-                        "x": 40.67846380800781,
-                        "y": 10.147851230633545
-                    },
-                    "id": 9,
-                    "rotate": 0
-                },
-                {
-                    "translate": {
-                        "x": 53.58791161853027,
-                        "y": 12.5049612
-                    },
-                    "id": 4,
-                    "rotate": 0
-                },
-                {
-                    "translate": {
-                        "x": 36.037912418530276,
-                        "y": 32.5096705
-                    },
-                    "id": 5,
-                    "rotate": 0
-                },
-                {
-                    "translate": {
-                        "x": 62.03380401499023,
-                        "y": 47.15257096860351
-                    },
-                    "id": 2,
-                    "rotate": 270
-                },
-                {
-                    "translate": {
-                        "x": 32.285143399999995,
-                        "y": -0.0104825185302726
-                    },
-                    "id": 6,
-                    "rotate": 270
-                },
-                {
-                    "translate": {
-                        "x": 50.15181070772095,
-                        "y": -4.5104825185302735
-                    },
-                    "id": 8,
-                    "rotate": 270
-                },
-                {
-                    "translate": {
-                        "x": 65.18514309227905,
-                        "y": 2.364517418530273
+                        "x": 38.5000028,
+                        "y": -8.046111581469727
                     },
                     "id": 7,
+                    "rotate": 90
+                },
+                {
+                    "translate": {
+                        "x": 58.287218100000004,
+                        "y": 50.324999318530274
+                    },
+                    "id": 8,
                     "rotate": 90
                 }
             ]
@@ -3519,7 +3519,7 @@
         },
         {
             "ap1Name": "Geometry",
-            "ap2Name": "Shape 7",
+            "ap2Name": "Shape 10",
             "ap2Primary": false,
             "ap1ID": 1735430491941,
             "ap2ID": 1735575380188
