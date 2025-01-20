@@ -449,8 +449,8 @@
         {
             "atomType": "Molecule",
             "name": "Undercarriage 1",
-            "x": 0.4237170596393897,
-            "y": 0.6060606060606061,
+            "x": 0.4147018030513176,
+            "y": 0.5757575757575757,
             "uniqueID": 1735430491941,
             "ioValues": [
                 {
@@ -2357,8 +2357,8 @@
         {
             "atomType": "Join",
             "name": "Assembly",
-            "x": 0.6857142857142857,
-            "y": 0.5272727272727272,
+            "x": 0.6823855755894591,
+            "y": 0.5,
             "uniqueID": 1735575380188,
             "ioValues": [
                 {
@@ -2442,8 +2442,8 @@
         {
             "atomType": "Molecule",
             "name": "undercarriage 2",
-            "x": 0.38877551020408163,
-            "y": 0.8151515151515152,
+            "x": 0.39042995839112343,
+            "y": 0.7969696969696969,
             "uniqueID": 1735664543921,
             "ioValues": [
                 {
@@ -2848,7 +2848,7 @@
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 6.666666666666667
+                            "ioValue": 7.041666666666667
                         },
                         {
                             "name": "zDist",
@@ -2879,24 +2879,28 @@
                 },
                 {
                     "atomType": "Equation",
-                    "name": "w/3",
+                    "name": "w/3 + y/2",
                     "x": 0.6747572815533981,
-                    "y": 0.896969696969697,
+                    "y": 0.893939393939394,
                     "uniqueID": 1735667299022,
                     "ioValues": [
                         {
                             "name": "w",
                             "ioValue": 20
+                        },
+                        {
+                            "name": "y",
+                            "ioValue": 0.75
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "w/3"
+                    "currentEquation": "w/3 + y/2"
                 },
                 {
                     "atomType": "Equation",
                     "name": "-w/3",
-                    "x": 0.7052704576976422,
-                    "y": 0.6363636363636364,
+                    "x": 0.7073509015256587,
+                    "y": 0.6424242424242425,
                     "uniqueID": 1735667308281,
                     "ioValues": [
                         {
@@ -2987,6 +2991,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1735664543516,
                     "ap2ID": 1735666946055
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "y",
+                    "ap2Primary": false,
+                    "ap1ID": 1735664543516,
+                    "ap2ID": 1735667299022
                 },
                 {
                     "ap1Name": "geometry",
