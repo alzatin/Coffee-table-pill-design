@@ -179,7 +179,7 @@
                     "description": "Moves a shape laterally in X, Y, Z."
                 },
                 {
-                    "atomType": "Join",
+                    "atomType": "Assembly",
                     "name": "Fusion",
                     "x": 0.6324549237170596,
                     "y": 0.7181818181818181,
@@ -992,7 +992,7 @@
                             "description": "Creates a new rectangle."
                         },
                         {
-                            "atomType": "Join",
+                            "atomType": "Assembly",
                             "name": "Fusion",
                             "x": 0.5533980582524272,
                             "y": 0.393939393939394,
@@ -1329,7 +1329,7 @@
                             "currentEquation": "x/2"
                         },
                         {
-                            "atomType": "Join",
+                            "atomType": "Assembly",
                             "name": "Join",
                             "x": 0.40915395284327327,
                             "y": 0.2545454545454546,
@@ -1759,7 +1759,7 @@
                     "description": "Moves a shape laterally in X, Y, Z."
                 },
                 {
-                    "atomType": "Join",
+                    "atomType": "Assembly",
                     "name": "Assembly",
                     "x": 0.726530612244898,
                     "y": 0.26666666666666666,
@@ -1813,7 +1813,7 @@
                     "description": "Moves a shape laterally in X, Y, Z."
                 },
                 {
-                    "atomType": "Join",
+                    "atomType": "Assembly",
                     "name": "Assembly",
                     "x": 0.8459183673469387,
                     "y": 0.48484848484848486,
@@ -2000,7 +2000,7 @@
                     "description": "Moves a shape laterally in X, Y, Z."
                 },
                 {
-                    "atomType": "Join",
+                    "atomType": "Assembly",
                     "name": "Assembly",
                     "x": 0.7459183673469388,
                     "y": 0.6757575757575758,
@@ -2355,7 +2355,7 @@
             "compiledBom": []
         },
         {
-            "atomType": "Join",
+            "atomType": "Assembly",
             "name": "Assembly",
             "x": 0.6844660194174756,
             "y": 0.5212121212121212,
@@ -2642,7 +2642,7 @@
                     "description": "The space shared by two shapes."
                 },
                 {
-                    "atomType": "Join",
+                    "atomType": "Assembly",
                     "name": "Fusion",
                     "x": 0.6204081632653061,
                     "y": 0.49393939393939396,
@@ -2858,7 +2858,7 @@
                     "description": "Moves a shape laterally in X, Y, Z."
                 },
                 {
-                    "atomType": "Join",
+                    "atomType": "Assembly",
                     "name": "Assembly",
                     "x": 0.9105409153952844,
                     "y": 0.5090909090909091,
