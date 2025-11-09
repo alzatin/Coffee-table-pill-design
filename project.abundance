@@ -11,8 +11,7 @@
     },
     {
       "name": "table height",
-      "ioValue": 19,
-      "currentEquation": "19"
+      "ioValue": 19
     },
     {
       "name": "wood thick",
@@ -44,8 +43,8 @@
     {
       "atomType": "Input",
       "name": "Table width",
-      "x": 0.0264,
-      "y": 0.16,
+      "x": 0.031349999999999996,
+      "y": 0.19,
       "uniqueID": 1735430025770,
       "ioValues": [],
       "type": "number"
@@ -795,8 +794,8 @@
     {
       "atomType": "Input",
       "name": "table height",
-      "x": 0.0264,
-      "y": 0.24,
+      "x": 0.031349999999999996,
+      "y": 0.28500000000000003,
       "uniqueID": 1735575553920,
       "ioValues": [],
       "type": "number"
@@ -818,8 +817,8 @@
     {
       "atomType": "Input",
       "name": "wood thick",
-      "x": 0.0264,
-      "y": 0.32,
+      "x": 0.031349999999999996,
+      "y": 0.38,
       "uniqueID": 1735575643398,
       "ioValues": [],
       "type": "number"
@@ -827,8 +826,8 @@
     {
       "atomType": "Input",
       "name": "top length",
-      "x": 0.0264,
-      "y": 0.4,
+      "x": 0.031349999999999996,
+      "y": 0.475,
       "uniqueID": 1735664938397,
       "ioValues": [],
       "type": "number"
@@ -836,8 +835,8 @@
     {
       "atomType": "Input",
       "name": "table length",
-      "x": 0.0264,
-      "y": 0.48000000000000004,
+      "x": 0.031349999999999996,
+      "y": 0.57,
       "uniqueID": 1735664962960,
       "ioValues": [],
       "type": "number"
@@ -845,8 +844,8 @@
     {
       "atomType": "Input",
       "name": "leg width",
-      "x": 0.0264,
-      "y": 0.56,
+      "x": 0.031349999999999996,
+      "y": 0.6649999999999999,
       "uniqueID": 1735665411877,
       "ioValues": [],
       "type": "number"
@@ -1008,8 +1007,8 @@
         {
           "atomType": "Input",
           "name": "Table Length",
-          "x": 0.0264,
-          "y": 0.16,
+          "x": 0.031349999999999996,
+          "y": 0.19,
           "uniqueID": 1735417710756,
           "ioValues": [],
           "type": "number"
@@ -1204,8 +1203,8 @@
         {
           "atomType": "Input",
           "name": "table width",
-          "x": 0.0264,
-          "y": 0.24,
+          "x": 0.031349999999999996,
+          "y": 0.28500000000000003,
           "uniqueID": 1735430094083,
           "ioValues": [],
           "type": "number"
@@ -1231,8 +1230,8 @@
         {
           "atomType": "Input",
           "name": "top thickness",
-          "x": 0.0264,
-          "y": 0.32,
+          "x": 0.031349999999999996,
+          "y": 0.38,
           "uniqueID": 1735430343202,
           "ioValues": [],
           "type": "number"
@@ -1415,24 +1414,24 @@
         {
           "atomType": "Input",
           "name": "Table width",
-          "x": 0.0264,
-          "y": 0.16,
+          "x": 0.031349999999999996,
+          "y": 0.19,
           "uniqueID": 1735664544038,
           "ioValues": []
         },
         {
           "atomType": "Input",
           "name": "table height",
-          "x": 0.0264,
-          "y": 0.24,
+          "x": 0.031349999999999996,
+          "y": 0.28500000000000003,
           "uniqueID": 1735664543188,
           "ioValues": []
         },
         {
           "atomType": "Input",
           "name": "wood thick",
-          "x": 0.0264,
-          "y": 0.32,
+          "x": 0.031349999999999996,
+          "y": 0.38,
           "uniqueID": 1735664543516,
           "ioValues": []
         },
@@ -1456,8 +1455,8 @@
         {
           "atomType": "Input",
           "name": "table length",
-          "x": 0.0264,
-          "y": 0.4,
+          "x": 0.031349999999999996,
+          "y": 0.475,
           "uniqueID": 1735664803284,
           "ioValues": [],
           "type": "number"
@@ -1478,8 +1477,8 @@
         {
           "atomType": "Input",
           "name": "leg width",
-          "x": 0.0264,
-          "y": 0.48000000000000004,
+          "x": 0.031349999999999996,
+          "y": 0.57,
           "uniqueID": 1735665960177,
           "ioValues": [],
           "type": "number"
@@ -2041,8 +2040,8 @@
         {
           "atomType": "Input",
           "name": "apron width",
-          "x": 0.0264,
-          "y": 0.56,
+          "x": 0.031349999999999996,
+          "y": 0.6649999999999999,
           "uniqueID": 1735667512146,
           "ioValues": [],
           "type": "number"
@@ -2342,16 +2341,16 @@
         {
           "atomType": "Input",
           "name": "Table width",
-          "x": 0.0264,
-          "y": 0.16,
+          "x": 0.031349999999999996,
+          "y": 0.19,
           "uniqueID": 1735430491605,
           "ioValues": []
         },
         {
           "atomType": "Input",
           "name": "leg width",
-          "x": 0.0264,
-          "y": 0.24,
+          "x": 0.031349999999999996,
+          "y": 0.28500000000000003,
           "uniqueID": 1735574284330,
           "ioValues": [],
           "type": "number"
@@ -2359,8 +2358,8 @@
         {
           "atomType": "Input",
           "name": "table length",
-          "x": 0.0264,
-          "y": 0.32,
+          "x": 0.031349999999999996,
+          "y": 0.38,
           "uniqueID": 1735574401644,
           "ioValues": [],
           "type": "number"
@@ -2368,8 +2367,8 @@
         {
           "atomType": "Input",
           "name": "wood thick",
-          "x": 0.0264,
-          "y": 0.4,
+          "x": 0.031349999999999996,
+          "y": 0.475,
           "uniqueID": 1735574425725,
           "ioValues": [],
           "type": "number"
@@ -3060,8 +3059,8 @@
         {
           "atomType": "Input",
           "name": "table height",
-          "x": 0.0264,
-          "y": 0.48000000000000004,
+          "x": 0.031349999999999996,
+          "y": 0.57,
           "uniqueID": 1735577409256,
           "ioValues": [],
           "type": "number"
@@ -3379,8 +3378,8 @@
             {
               "atomType": "Input",
               "name": "Table width",
-              "x": 0.0264,
-              "y": 0.16,
+              "x": 0.031349999999999996,
+              "y": 0.19,
               "uniqueID": 1735430512018,
               "ioValues": []
             },
@@ -3404,8 +3403,8 @@
             {
               "atomType": "Input",
               "name": "height(no-top)",
-              "x": 0.0264,
-              "y": 0.24,
+              "x": 0.031349999999999996,
+              "y": 0.28500000000000003,
               "uniqueID": 1735430585962,
               "ioValues": [],
               "type": "number"
@@ -3413,8 +3412,8 @@
             {
               "atomType": "Input",
               "name": "leg width",
-              "x": 0.0264,
-              "y": 0.32,
+              "x": 0.031349999999999996,
+              "y": 0.38,
               "uniqueID": 1735430644075,
               "ioValues": [],
               "type": "number"
@@ -3435,8 +3434,8 @@
             {
               "atomType": "Input",
               "name": "material thick",
-              "x": 0.0264,
-              "y": 0.4,
+              "x": 0.031349999999999996,
+              "y": 0.475,
               "uniqueID": 1735430979822,
               "ioValues": [],
               "type": "number"
@@ -3681,8 +3680,8 @@
             {
               "atomType": "Input",
               "name": "Table width",
-              "x": 0.0264,
-              "y": 0.16,
+              "x": 0.031349999999999996,
+              "y": 0.19,
               "uniqueID": 1735574204789,
               "ioValues": []
             },
@@ -3719,8 +3718,8 @@
             {
               "atomType": "Input",
               "name": "wood thick",
-              "x": 0.0264,
-              "y": 0.24,
+              "x": 0.031349999999999996,
+              "y": 0.28500000000000003,
               "uniqueID": 1735574246711,
               "ioValues": [],
               "type": "number"
@@ -3728,8 +3727,8 @@
             {
               "atomType": "Input",
               "name": "croos width",
-              "x": 0.0264,
-              "y": 0.32,
+              "x": 0.031349999999999996,
+              "y": 0.38,
               "uniqueID": 1735574304853,
               "ioValues": [],
               "type": "number"
