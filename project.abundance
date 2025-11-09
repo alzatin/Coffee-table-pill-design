@@ -7,8 +7,7 @@
   "ioValues": [
     {
       "name": "Table width",
-      "ioValue": 20,
-      "currentEquation": "20"
+      "ioValue": 20
     },
     {
       "name": "table height",
@@ -20,8 +19,7 @@
     },
     {
       "name": "top length",
-      "ioValue": 63,
-      "currentEquation": "63"
+      "ioValue": 63
     },
     {
       "name": "table length",
@@ -54,8 +52,8 @@
     {
       "atomType": "Assembly",
       "name": "Assembly",
-      "x": 0.6356382978723404,
-      "y": 0.48447204968944096,
+      "x": 0.6322147651006711,
+      "y": 0.6490683229813664,
       "uniqueID": 1735575380188,
       "ioValues": [
         {
