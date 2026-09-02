@@ -2,11 +2,25 @@
 
 # Coffee-table-pill-design
 
-![](/project.svg)
+![](/project.png)
+
+## Inputs
+
+- **Table width** (number)
+- **table height** (number)
+- **wood thick** (number)
+- **top length** (number)
+- **table length** (number)
+- **leg width** (number)
 
 
 
- Readme text here
+
+ ### Undercarriage 1
+
+### Leg
+
+Readme text here
 
 
 
